@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kawa czy Herbata - Świeżo palona kawa i aromatyczne herbaty</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,300&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. Pasek Nawigacyjny -->
+    <header class="navbar-header">
+        <div class="container nav-container">
+            <a href="#" class="brand-logo">
+                <i class="fa-solid fa-mug-hot logo-icon"></i>
+                <span class="brand-name">Kawa <span class="brand-accent">czy</span> Herbata</span>
+            </a>
+
+            <!-- Przycisk Hamburgera (navbar-toggler) -->
+            <button class="navbar-toggler" id="navbarToggler" aria-label="Otwórz menu nawigacji">
+                <i class="fa-solid fa-bars icon-open"></i>
+                <i class="fa-solid fa-xmark icon-close"></i>
+            </button>
+
+            <!-- Menu Nawigacyjne -->
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#o-nas" class="nav-link">O nas</a></li>
+                    <li class="nav-item"><a href="#oferta" class="nav-link">Oferta</a></li>
+                    <li class="nav-item"><a href="#kontakt" class="nav-link">Kontakt</a></li>
+                </ul>
+                <a href="#kontakt" class="btn btn-primary nav-cta">Napisz do nas</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 2. Sekcja Wiodąca (Hero) -->
+    <section id="hero" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <span class="hero-badge"><i class="fa-solid fa-leaf"></i> Najwyższa jakość ziaren i liści</span>
+            <h1 class="hero-title">Kawa czy Herbata? Odkryj swój ulubiony rytuał dnia.</h1>
+            <p class="hero-subtitle">
+                Rzemieślnicza palarnia kawy oraz starannie wyselekcjonowane herbaty z całego świata. Pasja, tradycja i niezrównany aromat zamknięte w każdej filiżance.
+            </p>
+            <div class="hero-actions">
+                <a href="#kontakt" class="btn btn-primary btn-lg">Przejdź do kontaktu</a>
+                <a href="#oferta" class="btn btn-outline btn-lg">Zobacz naszą ofertę</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Sekcja O Firmie -->
+    <section id="o-nas" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <div class="section-tag">Nasza Pasja i Misja</div>
+                    <h2 class="section-title">Połączyliśmy dwa światy doskonałego smaku</h2>
+                    <p class="about-description">
+                        Marka <strong>Kawa czy Herbata</strong> powstała z miłości do celebracji codziennych chwil. Wierzymy, że zarówno poranna miska pełna espresso, jak i wyciszający napar z zielonej herbaty zasługują na oprawę najwyższej jakości.
+                    </p>
+                    <p class="about-description">
+                        Sprowadzamy ziarna Arabiki wyłącznie z zaufanych, zrównoważonych plantacji i wypalamy je na miejscu. Nasze herbaty pochodzą od certyfikowanych dostawców z Azji, Afryki oraz Ameryki Południowej, tworząc wyjątkowe kompozycje smakowe.
+                    </p>
+                    <ul class="about-features">
+                        <li><i class="fa-solid fa-check feature-check"></i> 100% Świeżo palone ziarna rzemieślnicze</li>
+                        <li><i class="fa-solid fa-check feature-check"></i> Ekologiczne i unikalne herbaty liściaste</li>
+                        <li><i class="fa-solid fa-check feature-check"></i> Dbałość o sprawiedliwy handel (Fair Trade)</li>
+                    </ul>
+                </div>
+                <div class="about-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80" alt="Przygotowywanie kawy i herbaty" class="about-image">
+                    <div class="about-badge">
+                        <span class="badge-number">10+</span>
+                        <span class="badge-text">Lat doświadczenia i pasji</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Sekcja Kluczowej Oferty -->
+    <section id="oferta" class="offer-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="section-tag">Co oferujemy</div>
+                <h2 class="section-title">Odkryj nasze kluczowe kategorie</h2>
+                <p class="section-subtitle">Wybierz to, co najlepsze dla Twojego podniebienia lub spraw idealny prezent bliskiej osobie.</p>
+            </div>
+
+            <div class="cards-grid">
+                <!-- Kart 1: Kawa -->
+                <article class="card">
+                    <div class="card-image-container">
+                        <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&w=600&q=80" alt="Wyselekcjonowane Kawy Ziarniste" class="card-image">
+                        <span class="card-tag">Palarnia</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Wyselekcjonowane Kawy Ziarniste</h3>
+                        <p class="card-text">
+                            Świeżo palone ziarna 100% Arabica z wyżynnych rejonów Kolumbii, Etiopii i Brazylii. Posiadamy ziarna Single Origin oraz zbalansowane blendy espresso.
+                        </p>
+                        <ul class="card-features">
+                            <li><i class="fa-solid fa-coffee"></i> Zróżnicowany stopień palenia</li>
+                            <li><i class="fa-solid fa-clock"></i> Palone w małych partiach</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-price">od 39,00 zł</span>
+                        <a href="#kontakt" class="btn btn-secondary btn-sm">Zamów zestaw</a>
+                    </div>
+                </article>
+
+                <!-- Kart 2: Herbata -->
+                <article class="card">
+                    <div class="card-image-container">
+                        <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=600&q=80" alt="Aromatyczne Herbaty Liściaste" class="card-image">
+                        <span class="card-tag">Selekcja</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Aromatyczne Herbaty Liściaste</h3>
+                        <p class="card-text">
+                            Szlachetne czarne herbaty, orzeźwiająca Sencha, aromatyczny Matcha oraz naturalne mieszanki ziołowe i owocowe pełne głębokiego bukietu.
+                        </p>
+                        <ul class="card-features">
+                            <li><i class="fa-solid fa-leaf"></i> Całe, selekcjonowane liście</li>
+                            <li><i class="fa-solid fa-vial"></i> Unikalne autorskie kompozycje</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-price">od 24,00 zł</span>
+                        <a href="#kontakt" class="btn btn-secondary btn-sm">Zamów zestaw</a>
+                    </div>
+                </article>
+
+                <!-- Kart 3: Akcesoria -->
+                <article class="card">
+                    <div class="card-image-container">
+                        <img src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=600&q=80" alt="Akcesoria i Zestawy Prezentowe" class="card-image">
+                        <span class="card-tag">Akcesoria</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Akcesoria i Zestawy Prezentowe</h3>
+                        <p class="card-text">
+                            Eleganckie kawiarki, zaparzacze French Press, ceramiczne czarki oraz gotowe, estetycznie zapakowane zestawy degustacyjne na każdą okazję.
+                        </p>
+                        <ul class="card-features">
+                            <li><i class="fa-solid fa-gift"></i> Eleganckie opakowania prezentowe</li>
+                            <li><i class="fa-solid fa-gem"></i> Trwałe materiały wysokiej jakości</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <span class="card-price">od 65,00 zł</span>
+                        <a href="#kontakt" class="btn btn-secondary btn-sm">Zamów zestaw</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Sekcja Kontaktowa z Formularzem -->
+    <section id="kontakt" class="contact-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="section-tag">Porozmawiajmy</div>
+                <h2 class="section-title">Skontaktuj się z nami</h2>
+                <p class="section-subtitle">Chcesz złożyć zamówienie hurtowe, zapapytać o indywidualne zestawy prezentowe lub podjąć współpracę?</p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Dane teleadresowe -->
+                <div class="contact-info">
+                    <h3 class="contact-info-title">Dane Kontaktowe</h3>
+                    <p class="contact-info-desc">Jesteśmy do Twojej dyspozycji od poniedziałku do piątku. Zapraszamy do kontaktu telefonicznego, e-mailowego lub odwiedzin w naszym sklepie stacjonarnym.</p>
+
+                    <div class="info-items">
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="info-text">
+                                <strong>Adres stacjonarny:</strong>
+                                <span>ul. Aromatyczna 12/4, 00-001 Warszawa</span>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="info-text">
+                                <strong>Poczta elektroniczna:</strong>
+                                <span>kontakt@kawaczyherbata.pl</span>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="info-text">
+                                <strong>Infolinia i zamówienia:</strong>
+                                <span>+48 123 456 789</span>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+                            <div class="info-text">
+                                <strong>Godziny otwarcia:</strong>
+                                <span>Pn - Pt: 8:00 - 18:00 | Sob: 9:00 - 14:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formularz Zapytania Ofertowego -->
+                <div class="contact-form-card">
+                    <form id="offerForm" class="contact-form" onsubmit="handleFormSubmit(event)">
+                        <div class="form-group">
+                            <label for="fullName" class="form-label">Imię i nazwisko *</label>
+                            <input type="text" id="fullName" class="form-control" placeholder="np. Jan Kowalski" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Adres e-mail *</label>
+                            <input type="email" id="email" class="form-control" placeholder="np. jan.kowalski@domena.pl" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Temat wiadomości *</label>
+                            <select id="subject" class="form-control" required>
+                                <option value="" disabled selected>-- Wybierz temat zapytania --</option>
+                                <option value="hurt">Zapytanie o ofertę hurtową</option>
+                                <option value="indywidualne">Zamówienie indywidualne / Zestawy</option>
+                                <option value="wspolpraca">Propozycja współpracy</option>
+                                <option value="inne">Inne zapytanie</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Treść zapytania *</label>
+                            <textarea id="message" class="form-control" rows="5" placeholder="Wpisz treść swojej wiadomości..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fa-solid fa-paper-plane"></i> Wyślij zapytanie
+                        </button>
+                    </form>
+                    <div id="formSuccessMessage" class="form-message-success" style="display: none;">
+                        <i class="fa-solid fa-circle-check"></i> Dziękujemy! Twoja wiadomość została wysłana. Odpowiemy najszybciej jak to możliwe.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Stopka Serwisu -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#" class="brand-logo footer-logo">
+                    <i class="fa-solid fa-mug-hot logo-icon"></i>
+                    <span class="brand-name">Kawa <span class="brand-accent">czy</span> Herbata</span>
+                </a>
+                <p class="footer-desc">
+                    Sklep internetowy oraz palarnia z pasją do tworzenia niezapomnianych chwil przy filiżance najlepszych naparów.
+                </p>
+            </div>
+
+            <div class="footer-details">
+                <p class="footer-ident">
+                    <strong>Dane identyfikacyjne podmiotu:</strong><br>
+                    "Kawa czy Herbata" Sp. z o.o.<br>
+                    NIP: 123-456-78-90 | REGON: 987654321<br>
+                    KRS: 0000123456
+                </p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <p class="copyright-notice">
+                    &copy; 2026 Kawa czy Herbata. Wszelkie prawa zastrzeżone.
+                </p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Skrypt interaktywny dla Nawigacji i Formularza -->
+    <script>
+        // Obsługa menu mobilnego
+        const toggler = document.getElementById('navbarToggler');
+        const navMenu = document.getElementById('navMenu');
+
+        toggler.addEventListener('click', () => {
+            toggler.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Zamknięcie menu mobilnego po kliknięciu w link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                toggler.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Obsługa wysyłania formularza
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const form = document.getElementById('offerForm');
+            const successMsg = document.getElementById('formSuccessMessage');
+
+            form.style.display = 'none';
+            successMsg.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
