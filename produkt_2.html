@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiopia Yirgacheffe Organic - Kawa czy Herbata</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,300&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Zeyada&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+   
+</head>
+<body class="bg-light">
+
+    <div id="navbar-placeholder"></div>
+
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 1080;">
+        <div id="cartToast" class="toast align-items-center text-bg-dark border-0" role="alert">
+            <div class="d-flex">
+                <div class="toast-body d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-circle-check text-success fs-5"></i>
+                    <span id="toastMessage">Produkt został dodany do koszyka!</span>
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+            </div>
+        </div>
+    </div>
+
+    <main class="container py-4 py-md-5">
+
+        <nav aria-label="breadcrumb" class="mb-4">
+            <ol class="breadcrumb product-nav-breadcrumb small mb-0">
+                <li class="breadcrumb-item"><a href="index.html">Strona główna</a></li>
+                <li class="breadcrumb-item"><a href="sklep.html">Sklep</a></li>
+                <li class="breadcrumb-item"><a href="oferta.html">Kawa</a></li>
+                <li class="breadcrumb-item active">Etiopia Yirgacheffe Organic</li>
+            </ol>
+        </nav>
+
+        <div class="row g-4 g-lg-5 mb-5 bg-white p-3 p-md-4 rounded-4 shadow-sm align-items-start">
+            <div class="col-lg-6">
+                <div class="position-relative mb-3">
+                    <img id="mainProductImg" src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1000&q=80" alt="Etiopia Yirgacheffe Organic" class="product-main-img shadow-sm">
+                    <span class="badge bg-danger position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill fs-6">-11%</span>
+                </div>
+                <div class="row g-2" id="galleryThumbs">
+                    <div class="col-4">
+                        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80" class="w-100 thumb-img active-thumb" onclick="changeMainImage(this.src, this)" alt="Mini 1">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=80" class="w-100 thumb-img" onclick="changeMainImage(this.src, this)" alt="Mini 2">
+                    </div>
+                    <div class="col-4">
+                        <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&w=600&q=80" class="w-100 thumb-img" onclick="changeMainImage(this.src, this)" alt="Mini 3">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                    <span class="badge bg-secondary">KOD: KCH-KAW-002</span>
+                    <span class="stock-badge d-inline-flex align-items-center gap-1">
+                        <i class="fa-solid fa-circle-check"></i> W magazynie (dostępny natychmiast)
+                    </span>
+                </div>
+
+                <h1 class="h2 fw-bold text-dark mb-2">Etiopia Yirgacheffe Organic</h1>
+
+                <div class="d-flex align-items-center gap-2 mb-3">
+                    <div class="rating-stars small">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <span class="fw-bold small">4.9</span>
+                    <span class="text-muted small">• (18 opinii klientów)</span>
+                </div>
+
+                <div class="d-flex align-items-baseline gap-3 mb-3">
+                    <span class="price-tag">46,00 zł</span>
+                    <span class="old-price">52,00 zł</span>
+                </div>
+
+                <p class="text-secondary mb-4 leading-relaxed">
+                    Ekologiczna kawa ziarnista z ojczyzny arabiki. Urzeka niezwykle lekkim i złożonym profilem z wyrazistymi nutami bergamotki, kwiatu jaśminu oraz czarnej herbaty. Palona jasnym profilem.
+                </p>
+
+                <hr class="my-4 text-muted opacity-25">
+
+                <form id="addToCartForm" onsubmit="handleAddToCart(event)">
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-7">
+                            <label for="variantSelect" class="form-label small fw-bold text-dark">Wariant / Specyfikacja:</label>
+                            <select class="form-select form-select-lg border-2" id="variantSelect">
+                                <option value="Ziarnista (250g)" selected>Ziarnista (250g)</option>
+                                <option value="Mielona do Dripa / Chemexa (250g)">Mielona do Dripa / Chemexa (250g)</option>
+                                <option value="Ziarnista (1000g) [+90 zł]">Ziarnista (1000g) [+90 zł]</option>
+                            </select>
+                        </div>
+                        <div class="col-md-5">
+                            <label for="quantityInput" class="form-label small fw-bold text-dark">Liczba sztuk:</label>
+                            <div class="input-group input-group-lg">
+                                <button type="button" class="btn btn-outline-secondary" onclick="updateQty(-1)">-</button>
+                                <input type="number" class="form-control text-center font-monospace fw-bold" id="quantityInput" value="1" min="1" max="99" required>
+                                <button type="button" class="btn btn-outline-secondary" onclick="updateQty(1)">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-grid gap-2 d-md-flex align-items-center">
+                        <button type="submit" class="btn btn-warning btn-lg fw-bold rounded-pill px-4 flex-grow-1 shadow-sm">
+                            <i class="fa-solid fa-cart-plus me-2"></i>Dodaj do koszyka
+                        </button>
+                        <a href="koszyk.html" class="btn btn-outline-dark btn-lg rounded-pill px-4">Kup teraz</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Karuzela Proponowanych Produktów (Pozostałe 5) -->
+        <section class="py-4">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <div>
+                    <span class="section-tag">Rekomendacje</span>
+                    <h2 class="h3 fw-bold text-dark mb-0">Mogą Cię również zainteresować</h2>
+                </div>
+                <div class="d-flex gap-2">
+                    <button class="carousel-btn-custom" type="button" data-bs-target="#relatedProductsCarousel" data-bs-slide="prev">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-btn-custom" type="button" data-bs-target="#relatedProductsCarousel" data-bs-slide="next">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div id="relatedProductsCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <div class="card h-100 shadow-sm rel-product-card border-0">
+                                    <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&w=600&q=80" class="card-img-top" style="height:200px; object-fit:cover; border-radius: 16px 16px 0 0;" alt="Kolumbia Supremo">
+                                    <div class="card-body p-4 bg-white rounded-bottom-4 d-flex flex-column">
+                                        <span class="badge bg-secondary align-self-start mb-2">KAWA</span>
+                                        <h3 class="h6 card-title fw-bold text-dark mb-2">Kolumbia Supremo Single Origin</h3>
+                                        <p class="card-text text-muted small flex-grow-1">Karmel, orzechy włoskie i pomarańcze.</p>
+                                        <div class="pt-3 border-top mt-3 d-flex justify-content-between align-items-center">
+                                            <span class="fw-bold fs-5 text-dark">42,00 zł</span>
+                                            <a href="produkt_1.html" class="btn btn-outline-dark btn-sm rounded-pill px-3">Zobacz</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card h-100 shadow-sm rel-product-card border-0">
+                                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&q=80" class="card-img-top" style="height:200px; object-fit:cover; border-radius: 16px 16px 0 0;" alt="Kenia AA Nyeri">
+                                    <div class="card-body p-4 bg-white rounded-bottom-4 d-flex flex-column">
+                                        <span class="badge bg-secondary align-self-start mb-2">KAWA</span>
+                                        <h3 class="h6 card-title fw-bold text-dark mb-2">Kenia AA Nyeri Specialty</h3>
+                                        <p class="card-text text-muted small flex-grow-1">Czarna porzeczka, grejpfrut i trzcina cukrowa.</p>
+                                        <div class="pt-3 border-top mt-3 d-flex justify-content-between align-items-center">
+                                            <span class="fw-bold fs-5 text-dark">49,00 zł</span>
+                                            <a href="produkt_3.html" class="btn btn-outline-dark btn-sm rounded-pill px-3">Zobacz</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card h-100 shadow-sm rel-product-card border-0">
+                                    <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=600&q=80" class="card-img-top" style="height:200px; object-fit:cover; border-radius: 16px 16px 0 0;" alt="Sencha Fukujyu">
+                                    <div class="card-body p-4 bg-white rounded-bottom-4 d-flex flex-column">
+                                        <span class="badge bg-secondary align-self-start mb-2">HERBATA</span>
+                                        <h3 class="h6 card-title fw-bold text-dark mb-2">Japońska Sencha Fukujyu</h3>
+                                        <p class="card-text text-muted small flex-grow-1">Klasyczna zielona herbata liściasta z Shizuoka.</p>
+                                        <div class="pt-3 border-top mt-3 d-flex justify-content-between align-items-center">
+                                            <span class="fw-bold fs-5 text-dark">29,00 zł</span>
+                                            <a href="produkt_4.html" class="btn btn-outline-dark btn-sm rounded-pill px-3">Zobacz</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <div class="card h-100 shadow-sm rel-product-card border-0">
+                                    <img src="https://images.unsplash.com/photo-1536256263959-770b48d82b0a?auto=format&fit=crop&w=600&q=80" class="card-img-top" style="height:200px; object-fit:cover; border-radius: 16px 16px 0 0;" alt="Ceremonialna Matcha">
+                                    <div class="card-body p-4 bg-white rounded-bottom-4 d-flex flex-column">
+                                        <span class="badge bg-secondary align-self-start mb-2">HERBATA</span>
+                                        <h3 class="h6 card-title fw-bold text-dark mb-2">Ceremonialna Matcha Uji</h3>
+                                        <p class="card-text text-muted small flex-grow-1">Sproszkowana zielona herbata najwyższej klasy z Uji.</p>
+                                        <div class="pt-3 border-top mt-3 d-flex justify-content-between align-items-center">
+                                            <span class="fw-bold fs-5 text-dark">65,00 zł</span>
+                                            <a href="produkt_5.html" class="btn btn-outline-dark btn-sm rounded-pill px-3">Zobacz</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card h-100 shadow-sm rel-product-card border-0">
+                                    <img src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=600&q=80" class="card-img-top" style="height:200px; object-fit:cover; border-radius: 16px 16px 0 0;" alt="Moka Kawiarka">
+                                    <div class="card-body p-4 bg-white rounded-bottom-4 d-flex flex-column">
+                                        <span class="badge bg-secondary align-self-start mb-2">AKCESORIA</span>
+                                        <h3 class="h6 card-title fw-bold text-dark mb-2">Moka Kawiarka Ceramiczna 3tz</h3>
+                                        <p class="card-text text-muted small flex-grow-1">Stylowa kawiarka ze stali i ceramiki do espresso.</p>
+                                        <div class="pt-3 border-top mt-3 d-flex justify-content-between align-items-center">
+                                            <span class="fw-bold fs-5 text-dark">89,00 zł</span>
+                                            <a href="produkt_6.html" class="btn btn-outline-dark btn-sm rounded-pill px-3">Zobacz</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card h-100 shadow-sm rel-product-card border-0">
+                                    <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&w=600&q=80" class="card-img-top" style="height:200px; object-fit:cover; border-radius: 16px 16px 0 0;" alt="Kolumbia Supremo">
+                                    <div class="card-body p-4 bg-white rounded-bottom-4 d-flex flex-column">
+                                        <span class="badge bg-secondary align-self-start mb-2">KAWA</span>
+                                        <h3 class="h6 card-title fw-bold text-dark mb-2">Kolumbia Supremo Single Origin</h3>
+                                        <p class="card-text text-muted small flex-grow-1">100% Arabica ze średnim wypalaniem.</p>
+                                        <div class="pt-3 border-top mt-3 d-flex justify-content-between align-items-center">
+                                            <span class="fw-bold fs-5 text-dark">42,00 zł</span>
+                                            <a href="produkt_1.html" class="btn btn-outline-dark btn-sm rounded-pill px-3">Zobacz</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        fetch('navbar.html').then(r=>r.text()).then(d=>{document.getElementById('navbar-placeholder').innerHTML=d; updateCartBadge();});
+        fetch('footer.html').then(r=>r.text()).then(d=>{document.getElementById('footer-placeholder').innerHTML=d;});
+        function changeMainImage(src, el) {
+            const m = document.getElementById('mainProductImg'); m.style.opacity='0.4';
+            setTimeout(()=>{m.src=src; m.style.opacity='1';},150);
+            document.querySelectorAll('.thumb-img').forEach(i=>i.classList.remove('active-thumb'));
+            el.classList.add('active-thumb');
+        }
+        function updateQty(delta){
+            let inp=document.getElementById('quantityInput'), v=(parseInt(inp.value)||1)+delta;
+            if(v>=1 && v<=99) inp.value=v;
+        }
+        function handleAddToCart(e){
+            e.preventDefault();
+            const variant=document.getElementById('variantSelect').value, qty=parseInt(document.getElementById('quantityInput').value)||1;
+            const product={id:'2', name:'Etiopia Yirgacheffe Organic', price:46.0, img:'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80'};
+            let cart=JSON.parse(localStorage.getItem('kch_cart'))||[];
+            let idx=cart.findIndex(i=>i.product.id===product.id && i.variant===variant);
+            if(idx>-1) cart[idx].qty+=qty; else cart.push({product,variant,qty});
+            localStorage.setItem('kch_cart', JSON.stringify(cart)); updateCartBadge();
+            const toast = new bootstrap.Toast(document.getElementById('cartToast'));
+            document.getElementById('toastMessage').innerText=`Dodano do koszyka: ${product.name} (${variant}) - ${qty} szt.`;
+            toast.show();
+        }
+        function updateCartBadge(){
+            const cart=JSON.parse(localStorage.getItem('kch_cart'))||[];
+            const badge=document.getElementById('cartCountBadge');
+            if(badge) badge.innerText=cart.reduce((a,c)=>a+c.qty,0);
+        }
+    </script>
+</body>
+</html>

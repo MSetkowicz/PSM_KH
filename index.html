@@ -1,1 +1,386 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kawa czy Herbata - Świeżo palona kawa i aromatyczne herbaty</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,300&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Poppins:wght@600;700;800&family=Zeyada&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="80">
+
+    <!-- Miejsce na wczytanie nawigacji z pliku navbar.html -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- 2. Sekcja Wiodąca (Hero) -->
+    <section id="hero" class="hero-section d-flex align-items-center min-vh-75 text-center text-lg-start">
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-lg-8">
+                    <span class="badge bg-warning text-dark fs-6 mb-3 px-3 py-2 rounded-pill">
+                        <i class="fa-solid fa-leaf me-1"></i> Najwyższa jakość ziaren i liści
+                    </span>
+                    <h1 class="display-5 fw-bold mb-3">
+                        Kawa czy Herbata? Odkryj swój ulubiony rytuał dnia.
+                    </h1>
+                    <p class="lead mb-4 text-light opacity-90">
+                        Rzemieślnicza palarnia kawy oraz starannie wyselekcjonowane herbaty z całego świata. Pasja, tradycja i niezrównany aromat zamknięte w każdej filiżance.
+                    </p>
+                    <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
+                        <a href="sklep.html" class="btn btn-warning btn-lg fw-bold px-4 rounded-pill">Przejdź do sklepu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Sekcja O Firmie -->
+    <section id="o-nas" class="py-5 bg-light">
+        <div class="container py-4">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <span class="section-tag d-block mb-2">Nasza Pasja i Misja</span>
+                    <h2 class="display-6 fw-bold mb-4">Połączyliśmy dwa światy doskonałego smaku</h2>
+                    <p class="text-secondary mb-3">
+                        Marka <strong>Kawa czy Herbata</strong> powstała z miłości do celebracji codziennych chwil. Wierzymy, że zarówno poranna miska pełna espresso, jak i wyciszający napar z zielonej herbaty zasługują na oprawę najwyższej jakości.
+                    </p>
+                    <p class="text-secondary mb-4">
+                        Sprowadzamy ziarna Arabiki wyłącznie z zaufanych, zrównoważonych plantacji i wypalamy je na miejscu. Nasze herbaty pochodzą od certyfikowanych dostawców z Azji, Afryki oraz Ameryki Południowej, tworząc wyjątkowe kompozycje smakowe.
+                    </p>
+                    <ul class="list-unstyled d-flex flex-column gap-2 mb-0 fw-semibold">
+                        <li class="d-flex align-items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-success fs-5"></i> 100% Świeżo palone ziarna rzemieślnicze
+                        </li>
+                        <li class="d-flex align-items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-success fs-5"></i> Ekologiczne i unikalne herbaty liściaste
+                        </li>
+                        <li class="d-flex align-items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-success fs-5"></i> Dbałość o sprawiedliwy handel (Fair Trade)
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <div class="position-relative">
+                        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80" alt="Przygotowywanie kawy i herbaty" class="img-fluid rounded-4 shadow-lg w-100">
+                        <div class="position-absolute bottom-0 start-0 m-4 p-3 bg-white rounded-3 shadow text-center d-inline-block">
+                            <span class="h3 fw-bold text-warning d-block mb-0">10+</span>
+                            <small class="fw-semibold text-muted">Lat doświadczenia i pasji</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Sekcja Kluczowej Oferty -->
+    <section id="oferta" class="py-5" style="background-color: #70574a;">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <span class="section-tag" style="color: #DDF187;">Co oferujemy</span>
+                <h2 class="display-6 fw-bold text-white">Odkryj nasze kluczowe kategorie</h2>
+                <p class="text-light opacity-75 col-lg-6 mx-auto">Wybierz to, co najlepsze dla Twojego podniebienia lub spraw idealny prezent bliskiej osobie.</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Karta 1: Kawa -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm rounded-4 overflow-hidden">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&w=600&q=80" alt="Wyselekcjonowane Kawy Ziarniste" class="card-img-top">
+                            <span class="badge bg-dark position-absolute top-0 end-0 m-3 px-3 py-2">Palarnia</span>
+                        </div>
+                        <div class="card-body d-flex flex-column p-4">
+                            <h3 class="h5 card-title fw-bold">Wyselekcjonowane Kawy Ziarniste</h3>
+                            <p class="card-text text-muted flex-grow-1">
+                                Świeżo palone ziarna 100% Arabica z wyżynnych rejonów Kolumbii, Etiopii i Brazylii. Posiadamy ziarna Single Origin oraz zbalansowane blendy espresso.
+                            </p>
+                            <ul class="list-unstyled text-muted small my-3">
+                                <li class="mb-1"><i class="fa-solid fa-coffee me-2 text-warning"></i> Zróżnicowany stopień palenia</li>
+                                <li><i class="fa-solid fa-clock me-2 text-warning"></i> Palone w małych partiach</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-white border-0 p-4 pt-0 d-flex justify-content-between align-items-center">
+                            <span class="fw-bold fs-5 text-dark">od 39,00 zł</span>
+                            <a href="sklep.html" class="btn btn-outline-dark btn-sm rounded-pill px-3">Kup w sklepie</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Karta 2: Herbata -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm rounded-4 overflow-hidden">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=600&q=80" alt="Aromatyczne Herbaty Liściaste" class="card-img-top">
+                            <span class="badge bg-dark position-absolute top-0 end-0 m-3 px-3 py-2">Selekcja</span>
+                        </div>
+                        <div class="card-body d-flex flex-column p-4">
+                            <h3 class="h5 card-title fw-bold">Aromatyczne Herbaty Liściaste</h3>
+                            <p class="card-text text-muted flex-grow-1">
+                                Szlachetne czarne herbaty, orzeźwiająca Sencha, aromatyczny Matcha oraz naturalne mieszanki ziołowe i owocowe pełne głębokiego bukietu.
+                            </p>
+                            <ul class="list-unstyled text-muted small my-3">
+                                <li class="mb-1"><i class="fa-solid fa-leaf me-2 text-success"></i> Całe, selekcjonowane liście</li>
+                                <li><i class="fa-solid fa-vial me-2 text-success"></i> Unikalne autorskie kompozycje</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-white border-0 p-4 pt-0 d-flex justify-content-between align-items-center">
+                            <span class="fw-bold fs-5 text-dark">od 24,00 zł</span>
+                            <a href="sklep.html" class="btn btn-outline-dark btn-sm rounded-pill px-3">Kup w sklepie</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Karta 3: Akcesoria -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm rounded-4 overflow-hidden">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=600&q=80" alt="Akcesoria i Zestawy Prezentowe" class="card-img-top">
+                            <span class="badge bg-dark position-absolute top-0 end-0 m-3 px-3 py-2">Akcesoria</span>
+                        </div>
+                        <div class="card-body d-flex flex-column p-4">
+                            <h3 class="h5 card-title fw-bold">Akcesoria i Zestawy Prezentowe</h3>
+                            <p class="card-text text-muted flex-grow-1">
+                                Eleganckie kawiarki, zaparzacze French Press, ceramiczne czarki oraz gotowe, estetycznie zapakowane zestawy degustacyjne na każdą okazję.
+                            </p>
+                            <ul class="list-unstyled text-muted small my-3">
+                                <li class="mb-1"><i class="fa-solid fa-gift me-2 text-danger"></i> Eleganckie opakowania prezentowe</li>
+                                <li><i class="fa-solid fa-gem me-2 text-danger"></i> Trwałe materiały wysokiej jakości</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-white border-0 p-4 pt-0 d-flex justify-content-between align-items-center">
+                            <span class="fw-bold fs-5 text-dark">od 65,00 zł</span>
+                            <a href="sklep.html" class="btn btn-outline-dark btn-sm rounded-pill px-3">Kup w sklepie</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Sekcja Bloga / Najnowszych Wpisów -->
+    <section id="blog-preview" class="py-5 bg-white">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <span class="section-tag">Akademia Smaków</span>
+                <h2 class="display-6 fw-bold">Najnowsze wpisy z naszego bloga</h2>
+                <p class="text-muted col-lg-6 mx-auto">Poszerz swoją wiedzę o parzeniu kawy i herbaty. Poznaj tajniki naszych baristów i odkrywaj unikalne przepisy.</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Wpis 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <article class="card h-100 blog-card shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80" class="card-img-top blog-img" alt="Poradnik parzenia Chemex">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge badge-blog">KAWA</span>
+                                <small class="text-muted"><i class="fa-regular fa-calendar me-1"></i>12 Maja 2026</small>
+                            </div>
+                            <h3 class="h5 card-title fw-bold mb-3">Jak idealnie zaparzyć kawę w Chemexie? Poradnik krok po kroku</h3>
+                            <p class="card-text text-muted small flex-grow-1">Poznaj odpowiednie proporcje, temperaturę wody oraz gramaturę mielenia, aby uzyskać czysty i owocowy napar bez goryczki.</p>
+                            <div class="pt-3 border-top mt-3 text-end">
+                                <a href="blog.html" class="btn btn-sm btn-outline-dark rounded-pill">Czytaj dalej</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Wpis 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <article class="card h-100 blog-card shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=600&q=80" class="card-img-top blog-img" alt="Rodzaje zielonej herbaty">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge badge-blog">HERBATA</span>
+                                <small class="text-muted"><i class="fa-regular fa-calendar me-1"></i>04 Maja 2026</small>
+                            </div>
+                            <h3 class="h5 card-title fw-bold mb-3">Japońska Sencha vs. Matcha – czym się różnią i jak je parzyć?</h3>
+                            <p class="card-text text-muted small flex-grow-1">Poddajemy analizie zielone herbaty z Japonii. Dowiedz się, które liście zawierają najwięcej antyoksydantów i L-teaniny.</p>
+                            <div class="pt-3 border-top mt-3 text-end">
+                                <a href="blog.html" class="btn btn-sm btn-outline-dark rounded-pill">Czytaj dalej</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Wpis 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <article class="card h-100 blog-card shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=600&q=80" class="card-img-top blog-img" alt="Pielęgnacja akcesoriów kawowych">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge badge-blog">PORADY</span>
+                                <small class="text-muted"><i class="fa-regular fa-calendar me-1"></i>22 Kwiecień 2026</small>
+                            </div>
+                            <h3 class="h5 card-title fw-bold mb-3">Jak dbać o kawiarkę i młynki żarnowe, by służyły przez lata?</h3>
+                            <p class="card-text text-muted small flex-grow-1">Czyszczenie uszczelek, odkamienianie kawiarki i usuwanie pyłu kawowego z żaren – sprawdź nasz prosty przewodnik konserwacji.</p>
+                            <div class="pt-3 border-top mt-3 text-end">
+                                <a href="blog.html" class="btn btn-sm btn-outline-dark rounded-pill">Czytaj dalej</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Button CTA kierujący do pełnego archiwum -->
+            <div class="text-center mt-5">
+                <a href="blog.html" class="btn btn-warning btn-lg fw-bold px-4 rounded-pill">
+                    <i class="fa-solid fa-newspaper me-2"></i>Zobacz wszystkie artykuły
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Sekcja Kontaktowa z Formularzem -->
+    <section id="kontakt" class="py-5 bg-light">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <span class="section-tag">Porozmawiajmy</span>
+                <h2 class="display-6 fw-bold">Skontaktuj się z nami</h2>
+                <p class="text-muted col-lg-6 mx-auto">Chcesz złożyć zamówienie hurtowe, zapytać o indywidualne zestawy prezentowe lub podjąć współpracę?</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Dane teleadresowe -->
+                <div class="col-lg-5">
+                    <div class="bg-white p-4 p-md-5 rounded-4 shadow-sm h-100">
+                        <h3 class="h4 fw-bold mb-3">Dane Kontaktowe</h3>
+                        <p class="text-muted mb-4">Jesteśmy do Twojej dyspozycji od poniedziałku do piątku. Zapraszamy do kontaktu telefonicznego, e-mailowego lub odwiedzin w naszym sklepie stacjonarnym.</p>
+
+                        <div class="d-flex flex-column gap-3">
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="bg-light text-danger rounded-circle p-3 d-flex align-items-center justify-content-center" style="width: 48px; height: 48px;">
+                                    <i class="fa-solid fa-location-dot fs-5"></i>
+                                </div>
+                                <div>
+                                    <strong class="d-block text-dark">Adres stacjonarny:</strong>
+                                    <span class="text-muted">ul. Aromatyczna 12/4, 00-001 Warszawa</span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="bg-light text-danger rounded-circle p-3 d-flex align-items-center justify-content-center" style="width: 48px; height: 48px;">
+                                    <i class="fa-solid fa-envelope fs-5"></i>
+                                </div>
+                                <div>
+                                    <strong class="d-block text-dark">Poczta elektroniczna:</strong>
+                                    <span class="text-muted">kontakt@kawaczyherbata.pl</span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="bg-light text-danger rounded-circle p-3 d-flex align-items-center justify-content-center" style="width: 48px; height: 48px;">
+                                    <i class="fa-solid fa-phone fs-5"></i>
+                                </div>
+                                <div>
+                                    <strong class="d-block text-dark">Infolinia i zamówienia:</strong>
+                                    <span class="text-muted">+48 123 456 789</span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="bg-light text-danger rounded-circle p-3 d-flex align-items-center justify-content-center" style="width: 48px; height: 48px;">
+                                    <i class="fa-solid fa-clock fs-5"></i>
+                                </div>
+                                <div>
+                                    <strong class="d-block text-dark">Godziny otwarcia:</strong>
+                                    <span class="text-muted">Pn - Pt: 8:00 - 18:00 | Sob: 9:00 - 14:00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formularz Zapytania Ofertowego -->
+                <div class="col-lg-7">
+                    <div class="bg-white p-4 p-md-5 rounded-4 shadow-sm h-100">
+                        <form id="offerForm" onsubmit="handleFormSubmit(event)">
+                            <div class="mb-3">
+                                <label for="fullName" class="form-label fw-semibold">Imię i nazwisko *</label>
+                                <input type="text" id="fullName" class="form-control form-control-lg" placeholder="np. Jan Kowalski" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-semibold">Adres e-mail *</label>
+                                <input type="email" id="email" class="form-control form-control-lg" placeholder="np. jan.kowalski@domena.pl" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="subject" class="form-label fw-semibold">Temat wiadomości *</label>
+                                <select id="subject" class="form-select form-select-lg" required>
+                                    <option value="" disabled selected>-- Wybierz temat zapytania --</option>
+                                    <option value="hurt">Zapytanie o ofertę hurtową</option>
+                                    <option value="indywidualne">Zamówienie indywidualne / Zestawy</option>
+                                    <option value="wspolpraca">Propozycja współpracy</option>
+                                    <option value="inne">Inne zapytanie</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="message" class="form-label fw-semibold">Treść zapytania *</label>
+                                <textarea id="message" class="form-control form-control-lg" rows="4" placeholder="Wpisz treść swojej wiadomości..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-warning btn-lg w-100 fw-bold">
+                                <i class="fa-solid fa-paper-plane me-2"></i> Wyślij zapytanie
+                            </button>
+                        </form>
+
+                        <div id="formSuccessMessage" class="alert alert-success d-none mt-3" role="alert">
+                            <i class="fa-solid fa-circle-check me-2"></i> Dziękujemy! Twoja wiadomość została wysłana. Odpowiemy najszybciej jak to możliwe.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Miejsce na wczytanie stopki z pliku footer.html -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Skrypt ładujący nawigację i stopkę -->
+    <script>
+        fetch('navbar.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+                updateCartBadge();
+            });
+
+        fetch('footer.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+
+        function updateCartBadge() {
+            const cart = JSON.parse(localStorage.getItem('kch_cart')) || [];
+            const totalItems = cart.reduce((acc, item) => acc + item.qty, 0);
+            const badge = document.getElementById('cartCountBadge');
+            if (badge) badge.innerText = totalItems;
+        }
+
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            document.getElementById('offerForm').classList.add('d-none');
+            document.getElementById('formSuccessMessage').classList.remove('d-none');
+        }
+    </script>
+</body>
+</html>

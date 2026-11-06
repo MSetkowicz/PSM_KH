@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moje Konto - Kawa czy Herbata</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,300&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Zeyada&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css">
+
+    
+</head>
+<body class="bg-light">
+
+    <!-- Miejsce na wczytanie nawigacji z pliku navbar.html -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Nagłówek Podstrony Konto ze zdjęciem w tle -->
+    <section class="account-header text-center">
+        <div class="container py-2">
+            <h1 class="display-5 fw-bold mb-2">
+                <i class="fa-solid fa-circle-user me-2 text-warning"></i>Moje Konto
+            </h1>
+            <p class="lead opacity-90 col-lg-7 mx-auto mb-0">
+                Witaj w swoim profilu. Zarządzaj zamówieniami, adresami i ustawieniami w jednym miejscu.
+            </p>
+        </div>
+    </section>
+
+    <!-- Główna Zawartość Panelu Klienta -->
+    <main class="container py-5">
+        <div class="row g-4">
+            
+            <!-- 1. Boczne Menu Nawigacyjne Klienta (<aside>) -->
+            <aside class="col-lg-3">
+                <div class="account-card p-3 shadow-sm">
+                    <div class="d-flex align-items-center gap-3 p-2 mb-3 border-bottom pb-3">
+                        <div class="bg-warning text-dark rounded-circle d-flex align-items-center justify-content-center fw-bold fs-4" style="width: 50px; height: 50px;">
+                            JK
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-0">Jan Kowalski</h6>
+                            <small class="text-muted">jan.kowalski@domena.pl</small>
+                        </div>
+                    </div>
+
+                    <div class="nav flex-column nav-pills nav-pills-custom" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <button class="nav-link active text-start" id="v-pills-dashboard-tab" data-bs-toggle="pill" data-bs-target="#v-pills-dashboard" type="button" role="tab"><i class="fa-solid fa-gauge me-2"></i>Pulpit</button>
+                        <button class="nav-link text-start" id="v-pills-orders-tab" data-bs-toggle="pill" data-bs-target="#v-pills-orders" type="button" role="tab"><i class="fa-solid fa-box-archive me-2"></i>Moje zamówienia</button>
+                        <button class="nav-link text-start" id="v-pills-address-tab" data-bs-toggle="pill" data-bs-target="#v-pills-address" type="button" role="tab"><i class="fa-solid fa-location-dot me-2"></i>Adresy dostawy</button>
+                        <button class="nav-link text-start" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab"><i class="fa-solid fa-sliders me-2"></i>Ustawienia konta</button>
+                        <hr class="my-2">
+                        <a href="index.html" class="nav-link text-danger text-start"><i class="fa-solid fa-right-from-bracket me-2"></i>Wyloguj</a>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- 2. Główny Obszar Panelu (<main>) -->
+            <div class="col-lg-9">
+                <div class="tab-content" id="v-pills-tabContent">
+                    
+                    <!-- Sekcja: PULPIT (Podsumowanie) -->
+                    <div class="tab-pane fade show active" id="v-pills-dashboard" role="tabpanel">
+                        <div class="account-card p-4 shadow-sm mb-4">
+                            <h2 class="h4 fw-bold text-dark mb-2">Witaj ponownie, Janie! 👋</h2>
+                            <p class="text-muted mb-0">Z poziomu pulpitu możesz wygodnie przeglądać najnowsze zamówienia, zarządzać domyślnym adresem wysyłki oraz aktualizować swoje dane osobowe.</p>
+                        </div>
+
+                        <!-- Syntetyczne podsumowanie statusu konta -->
+                        <div class="row g-3 mb-4">
+                            <div class="col-md-4">
+                                <div class="account-card p-3 shadow-sm border-start border-warning border-4">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <span class="text-muted small">Wszystkie zamówienia</span>
+                                            <h3 class="h4 fw-bold mb-0">12</h3>
+                                        </div>
+                                        <i class="fa-solid fa-bag-shopping fs-2 text-warning"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="account-card p-3 shadow-sm border-start border-primary border-4">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <span class="text-muted small">W realizacji</span>
+                                            <h3 class="h4 fw-bold mb-0">1</h3>
+                                        </div>
+                                        <i class="fa-solid fa-truck-ramping fs-2 text-primary"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="account-card p-3 shadow-sm border-start border-success border-4">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <span class="text-muted small">Punkty lojalnościowe</span>
+                                            <h3 class="h4 fw-bold mb-0">340 pkt</h3>
+                                        </div>
+                                        <i class="fa-solid fa-award fs-2 text-success"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Ostatnie zamówienie -->
+                        <div class="account-card p-4 shadow-sm">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h3 class="h5 fw-bold mb-0">Ostatnio złożone zamówienie</h3>
+                                <button class="btn btn-sm btn-link text-decoration-none text-danger fw-bold shadow-none" onclick="switchTab('v-pills-orders-tab')">Zobacz wszystkie</button>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table align-middle mb-0">
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th>Numer</th>
+                                            <th>Data</th>
+                                            <th>Kwota</th>
+                                            <th>Status</th>
+                                            <th>Akcja</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="fw-bold">#KCH-892341</td>
+                                            <td class="small text-muted">06.11.2026</td>
+                                            <td class="fw-bold">145,00 zł</td>
+                                            <td><span class="badge badge-in-progress px-3 py-2 rounded-pill">W realizacji</span></td>
+                                            <td><button class="btn btn-sm btn-outline-dark rounded-pill px-3 shadow-none" onclick="showOrderDetails('KCH-892341')">Szczegóły</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sekcja: MOJE ZAMÓWIENIA (Tabela historii) -->
+                    <div class="tab-pane fade" id="v-pills-orders" role="tabpanel">
+                        <div class="account-card p-4 shadow-sm">
+                            <h3 class="h5 fw-bold mb-3 border-bottom pb-2">Historia zamówień</h3>
+                            <div class="table-responsive">
+                                <table class="table align-middle">
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th>Numer zamówienia</th>
+                                            <th>Data</th>
+                                            <th>Kwota</th>
+                                            <th>Status</th>
+                                            <th>Opcje</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="fw-bold">#KCH-892341</td>
+                                            <td class="small text-muted">06.11.2026</td>
+                                            <td class="fw-bold">145,00 zł</td>
+                                            <td><span class="badge badge-in-progress px-3 py-2 rounded-pill">W realizacji</span></td>
+                                            <td><button class="btn btn-sm btn-outline-dark rounded-pill px-3 shadow-none" onclick="showOrderDetails('KCH-892341')">Szczegóły</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fw-bold">#KCH-774102</td>
+                                            <td class="small text-muted">22.10.2026</td>
+                                            <td class="fw-bold">89,00 zł</td>
+                                            <td><span class="badge badge-shipped px-3 py-2 rounded-pill">Wysłane</span></td>
+                                            <td><button class="btn btn-sm btn-outline-dark rounded-pill px-3 shadow-none" onclick="showOrderDetails('KCH-774102')">Szczegóły</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fw-bold">#KCH-612984</td>
+                                            <td class="small text-muted">15.09.2026</td>
+                                            <td class="fw-bold">210,50 zł</td>
+                                            <td><span class="badge badge-shipped px-3 py-2 rounded-pill">Wysłane</span></td>
+                                            <td><button class="btn btn-sm btn-outline-dark rounded-pill px-3 shadow-none" onclick="showOrderDetails('KCH-612984')">Szczegóły</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sekcja: ADRESY DOSTAWY (Z możliwością edycji) -->
+                    <div class="tab-pane fade" id="v-pills-address" role="tabpanel">
+                        <div class="account-card p-4 shadow-sm mb-4">
+                            <div class="d-flex justify-content-between align-items-center border-bottom pb-2 mb-3">
+                                <h3 class="h5 fw-bold mb-0">Domyślny adres wysyłki</h3>
+                                <span class="badge bg-dark">Domyślny</span>
+                            </div>
+                            
+                            <!-- Podgląd aktualnego adresu -->
+                            <div id="addressDisplay">
+                                <p class="mb-1 fw-bold" id="dispName">Jan Kowalski</p>
+                                <p class="mb-1 text-muted" id="dispStreet">ul. Kwiatowa 12/4</p>
+                                <p class="mb-1 text-muted" id="dispCity">00-001 Warszawa</p>
+                                <p class="mb-3 text-muted" id="dispPhone">tel. +48 600 700 800</p>
+                                <button class="btn btn-warning btn-sm fw-bold rounded-pill px-4 shadow-none" onclick="toggleAddressEdit(true)">
+                                    <i class="fa-solid fa-pen-to-square me-2"></i>Edytuj adres
+                                </button>
+                            </div>
+
+                            <!-- Formularz edycji adresu -->
+                            <form id="addressForm" class="d-none mt-3" onsubmit="saveAddress(event)">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label small fw-bold">Imię i nazwisko *</label>
+                                        <input type="text" id="inputName" class="form-control" value="Jan Kowalski" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label small fw-bold">Numer telefonu *</label>
+                                        <input type="tel" id="inputPhone" class="form-control" value="+48 600 700 800" required>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <label class="form-label small fw-bold">Ulica i numer budynku/lokalu *</label>
+                                        <input type="text" id="inputStreet" class="form-control" value="ul. Kwiatowa 12/4" required>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="form-label small fw-bold">Kod pocztowy i miasto *</label>
+                                        <input type="text" id="inputCity" class="form-control" value="00-001 Warszawa" required>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-2 mt-4">
+                                    <button type="submit" class="btn btn-warning fw-bold rounded-pill px-4">Zapisz zmiany</button>
+                                    <button type="button" class="btn btn-outline-secondary rounded-pill px-4" onclick="toggleAddressEdit(false)">Anuluj</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Sekcja: USTAWIENIA KONTA -->
+                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel">
+                        <div class="account-card p-4 shadow-sm">
+                            <h3 class="h5 fw-bold mb-3 border-bottom pb-2">Dane konta i zmiana hasła</h3>
+                            <form onsubmit="alert('Dane zostały zaktualizowane!'); return false;">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label small fw-bold">Adres e-mail</label>
+                                        <input type="email" class="form-control" value="jan.kowalski@domena.pl" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label small fw-bold">Aktualne hasło</label>
+                                        <input type="password" class="form-control" placeholder="••••••••">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label small fw-bold">Nowe hasło</label>
+                                        <input type="password" class="form-control" placeholder="Wpisz nowe hasło">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label small fw-bold">Powtórz nowe hasło</label>
+                                        <input type="password" class="form-control" placeholder="Powtórz nowe hasło">
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-warning fw-bold rounded-pill px-4 mt-4 shadow-none">Aktualizuj konto</button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Modal Szczegółów Zamówienia -->
+    <div class="modal fade" id="orderDetailsModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4">
+                <div class="modal-header border-bottom">
+                    <h5 class="modal-title fw-bold" id="modalOrderTitle">Szczegóły zamówienia</h5>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <p class="small text-muted mb-2">Zawartość paczki:</p>
+                    <ul class="list-group list-group-flush mb-3">
+                        <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                            <span>Kolumbia Supremo Single Origin (250g)</span>
+                            <span class="fw-bold">42,00 zł</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                            <span>Ceremonialna Matcha Uji Premium (50g)</span>
+                            <span class="fw-bold">65,00 zł</span>
+                        </li>
+                    </ul>
+                    <div class="d-flex justify-content-between fw-bold border-top pt-2">
+                        <span>Łącznie z dostawą:</span>
+                        <span class="text-danger fs-5" id="modalOrderTotal">145,00 zł</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Miejsce na wczytanie stopki z pliku footer.html -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Bootstrap 5 JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Skrypty Wczytywania Nawigacji i Logiki Panelu -->
+    <script>
+        fetch('navbar.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+                updateCartBadge();
+            });
+
+        fetch('footer.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+
+        function updateCartBadge() {
+            const cart = JSON.parse(localStorage.getItem('kch_cart')) || [];
+            const totalItems = cart.reduce((acc, item) => acc + item.qty, 0);
+            const badge = document.getElementById('cartCountBadge');
+            if (badge) badge.innerText = totalItems;
+        }
+
+        // Przełączanie zakładki z poziomu kodu
+        function switchTab(tabId) {
+            const tabEl = document.getElementById(tabId);
+            if (tabEl) {
+                const tab = new bootstrap.Tab(tabEl);
+                tab.show();
+            }
+        }
+
+        // Podgląd i edycja adresu
+        function toggleAddressEdit(isEdit) {
+            const display = document.getElementById('addressDisplay');
+            const form = document.getElementById('addressForm');
+            if (isEdit) {
+                display.classList.add('d-none');
+                form.classList.remove('d-none');
+            } else {
+                display.classList.remove('d-none');
+                form.classList.add('d-none');
+            }
+        }
+
+        function saveAddress(e) {
+            e.preventDefault();
+            document.getElementById('dispName').innerText = document.getElementById('inputName').value;
+            document.getElementById('dispStreet').innerText = document.getElementById('inputStreet').value;
+            document.getElementById('dispCity').innerText = document.getElementById('inputCity').value;
+            document.getElementById('dispPhone').innerText = 'tel. ' + document.getElementById('inputPhone').value;
+            toggleAddressEdit(false);
+            alert('Adres dostawy został pomyślnie zaktualizowany.');
+        }
+
+        // Wyświetlanie szczegółów zamówienia w modalu
+        function showOrderDetails(orderId) {
+            document.getElementById('modalOrderTitle').innerText = 'Szczegóły zamówienia #' + orderId;
+            const modal = new bootstrap.Modal(document.getElementById('orderDetailsModal'));
+            modal.show();
+        }
+    </script>
+</body>
+</html>

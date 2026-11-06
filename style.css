@@ -1,0 +1,620 @@
+/* =======================================================
+   MODUŁ OGÓLNY I BAZOWY (HTML, BODY, TYPOGRAFIA)
+   ======================================================= */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #2b2b2b;
+    background-color: #f8f5f2;
+}
+
+/* Główny nagłówek H1 (sekcja Hero) – krój Zeyada oraz kolor #E67940 */ 
+.hero-title {
+    font-family: 'Zeyada', cursive !important;
+    color: #70574a !important;
+}
+
+/* Pozostałe nagłówki i nazwa marki */
+h2, .brand-name {
+    font-family: 'Zeyada', cursive !important;
+}
+
+h3 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #f2eded !important;
+}
+
+.section-tag {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 1.5px;
+    color: #E67940;
+}
+
+.section-heading {
+    color: #70574a;
+}
+
+/* =======================================================
+   MODUŁ NAWIGACJI I NAGŁÓWKA (NAVBAR & HERO)
+   ======================================================= */
+header, 
+.navbar,
+.navbar-custom {
+    background-color: #f2eded !important;
+}
+
+.hero-section {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('tlo_index.jpg') center/cover no-repeat;
+    padding: 120px 0;
+    color: #f2eded;
+}
+
+/* Kolor wyróżnienia marki */
+.brand-accent {
+    color: #c86d51;
+    font-style: italic;
+}
+
+/* Nawigacja okruszkowa (Breadcrumb) */
+.breadcrumb a,
+.product-nav-breadcrumb a {
+    color: #a65d43;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover,
+.product-nav-breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+/* =======================================================
+   MODUŁ E-COMMERCE (KOSZYK, SKLEP, OFERTA, KATALOG)
+   ======================================================= */
+.shop-header {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+    color: #f2eded;
+    padding: 80px 0 60px;
+}
+
+.bestseller-card {
+    border-radius: 16px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.bestseller-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1) !important;
+}
+
+.full-catalog-banner {
+    background: linear-gradient(135deg, #591600 0%, #3b0e00 100%);
+    color: #ffffff;
+    border-radius: 20px;
+}
+
+.btn-outline-orange {
+    background-color: transparent !important;
+    border: 2px solid #E67940 !important;
+    color: #ffffff !important;
+    transition: all 0.25s ease-in-out;
+}
+
+.btn-outline-orange:hover {
+    background-color: #E67940 !important;
+    color: #ffffff !important;
+    border-color: #E67940 !important;
+}
+
+.page-header {
+    background-color: #591600;
+    color: #f2eded;
+    padding: 40px 0;
+}
+
+.cart-item-img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.qty-input {
+    width: 48px;
+    text-align: center;
+}
+
+/* Panel filtrów bocznych katalogu */
+.filter-aside {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.offer-card {
+    border: none;
+    border-radius: 16px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    background: #ffffff;
+}
+
+.offer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1) !important;
+}
+
+.offer-img {
+    height: 220px;
+    object-fit: cover;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+/* =======================================================
+   MODUŁ STRONY PRODUKTU (POJEDYNCZY PRODUKT)
+   ======================================================= */
+.product-main-img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 16px;
+    transition: opacity 0.3s ease;
+}
+
+.thumb-img {
+    height: 100px;
+    object-fit: cover;
+    border-radius: 12px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.thumb-img:hover, 
+.thumb-img.active-thumb {
+    border-color: #E67940;
+    opacity: 0.85;
+}
+
+.price-tag {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #70574a;
+}
+
+.old-price {
+    font-size: 1.3rem;
+    text-decoration: line-through;
+    color: #999;
+}
+
+.stock-badge {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    font-weight: 600;
+    padding: 0.4rem 0.8rem;
+    border-radius: 50rem;
+    font-size: 0.85rem;
+}
+
+.nav-tabs .nav-link {
+    color: #555;
+    font-weight: 600;
+    border: none;
+    border-bottom: 3px solid transparent;
+    padding: 0.8rem 1.5rem;
+}
+
+.nav-tabs .nav-link.active {
+    color: #70574a;
+    border-bottom-color: #E67940;
+    background: transparent;
+}
+
+.rel-product-card {
+    border-radius: 16px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.rel-product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08) !important;
+}
+
+.rating-stars {
+    color: #ffc107;
+}
+
+.carousel-btn-custom {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    color: #2b2b2b;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.carousel-btn-custom:hover {
+    background-color: #E67940;
+    color: #ffffff;
+    border-color: #E67940;
+}
+
+/* =======================================================
+   MODUŁ PROCESU ZAMÓWIENIA (CHECKOUT / KASA)
+   ======================================================= */
+.checkout-card {
+    border: none;
+    border-radius: 16px;
+    background: #ffffff;
+}
+
+.summary-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* =======================================================
+   MODUŁ PANELU KLIENTA (MOJE KONTO)
+   ======================================================= */
+.account-header {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('konto_tlo.jpg') center/cover no-repeat;
+    color: #f2eded;
+    padding: 80px 0;
+}
+
+.account-card {
+    border: none;
+    border-radius: 16px;
+    background: #ffffff;
+}
+
+.nav-pills-custom .nav-link {
+    color: #2b2b2b;
+    font-weight: 600;
+    border-radius: 12px;
+    padding: 12px 18px;
+    margin-bottom: 6px;
+    transition: all 0.2s ease;
+}
+
+.nav-pills-custom .nav-link:hover {
+    background-color: #f5eee8;
+    color: #E67940;
+}
+
+.nav-pills-custom .nav-link.active {
+    background-color: #E67940 !important;
+    color: #ffffff !important;
+}
+
+.nav-pills-custom .nav-link.text-danger:hover {
+    background-color: #fde8e8 !important;
+    color: #dc3545 !important;
+}
+
+.badge-in-progress {
+    background-color: #e6a100;
+    color: #ffffff;
+}
+
+.badge-shipped {
+    background-color: #198754;
+    color: #ffffff;
+}
+
+/* =======================================================
+   MODUŁ BLOGA I POJEDYNCZYCH ARTYKUŁÓW
+   ======================================================= */
+.blog-header {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('naglowek_blog.jpg') center/cover no-repeat;
+    color: #f2eded;
+    padding: 80px 0 60px;
+}
+
+.blog-card {
+    border: none;
+    border-radius: 16px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    background: #ffffff;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1) !important;
+}
+
+.blog-img {
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.badge-blog {
+    background-color: #E67940;
+    color: #ffffff;
+}
+
+.sidebar-box {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.sidebar-thumb {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.page-item.active .page-link {
+    background-color: #E67940;
+    border-color: #E67940;
+    color: #ffffff !important;
+}
+
+.page-link {
+    color: #591600;
+}
+
+/* Pojedynczy Artykuł - układy i treść */
+.article-shell {
+    max-width: 900px;
+}
+
+.article-title {
+    color: #2b2b2b !important;
+    line-height: 1.15;
+}
+
+.article-meta {
+    color: #777;
+    font-size: .92rem;
+}
+
+.article-meta i {
+    color: #c86d51;
+}
+
+.article-cover {
+    width: 100%;
+    max-height: 480px;
+    object-fit: cover;
+}
+
+.article-content {
+    font-size: 1.04rem;
+    line-height: 1.85;
+}
+
+.article-content h2 {
+    color: #70574a;
+    font-size: 2.25rem;
+    margin-top: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.article-content h3 {
+    color: #49382f;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+}
+
+.article-lead {
+    font-size: 1.22rem;
+    line-height: 1.75;
+    color: #51443d;
+}
+
+.blockquote {
+    border-left: 5px solid #e67940;
+    background: #f5eee8;
+    padding: 1.25rem 1.5rem;
+    color: #5b4a40;
+    border-radius: 0 .75rem .75rem 0;
+}
+
+.article-content table th {
+    background: #70574a;
+    color: #fff;
+}
+
+.article-content table td, 
+.article-content table th {
+    padding: .85rem;
+}
+
+.article-content figure img {
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+}
+
+.article-content figcaption {
+    color: #777;
+    font-size: .9rem;
+    margin-top: .6rem;
+    text-align: center;
+}
+
+.tag-link {
+    display: inline-block;
+    padding: .4rem .85rem;
+    margin: .2rem;
+    border-radius: 50rem;
+    background: #f1e5dc;
+    color: #80513d;
+    text-decoration: none;
+    font-size: .88rem;
+}
+
+.tag-link:hover {
+    background: #e9d5c7;
+    color: #573827;
+}
+
+.author-box, 
+.comment-card, 
+.comment-form, 
+.article-navigation {
+    background: #fff;
+    border-radius: 1rem;
+}
+
+.author-avatar {
+    width: 76px;
+    height: 76px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.social-link {
+    width: 42px;
+    height: 42px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e5d8ce;
+    border-radius: 50%;
+    color: #80513d;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    background: #e67940;
+    color: #fff;
+    border-color: #e67940;
+}
+
+.comment-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.btn-brand {
+    background: #e67940;
+    border-color: #e67940;
+    color: #fff;
+}
+
+.btn-brand:hover {
+    background: #c96532;
+    border-color: #c96532;
+    color: #fff;
+}
+
+@media (max-width: 576px) {
+    .article-title { font-size: 2rem; }
+    .article-content { font-size: 1rem; }
+    .article-content h2 { font-size: 1.9rem; }
+}
+
+/* =======================================================
+   MODUŁ KART I ELEMENTÓW INTERAKTYWNYCH
+   ======================================================= */
+.card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;
+}
+
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+
+/* =======================================================
+   MODUŁ NADPISANIA ŻÓŁTYCH ELEMENTÓW BOOTSTRAPA NA #DDF187
+   ======================================================= */
+.btn-warning {
+    background-color: #E67940 !important;
+    border-color: #E67940 !important;
+    color: #f2eded !important;
+}
+
+.btn-warning:hover, 
+.btn-warning:focus, 
+.btn-warning:active {
+    background-color: #cbe06e !important;
+    border-color: #cbe06e !important;
+    color: #2b2b2b !important;
+}
+
+.bg-warning {
+    background-color: #DDF187 !important;
+    color: #2b2b2b !important;
+}
+
+.text-warning {
+    color: #DDF187 !important;
+}
+
+.alert-warning {
+    background-color: #f7fcdb !important;
+    border-color: #DDF187 !important;
+    color: #3b4218 !important;
+}
+
+/* =======================================================
+   MODUŁ IKON I ELEMENTÓW BRANDINGOWYCH
+   ======================================================= */
+.brand-icon,
+.navbar-brand i.fa-mug-hot,
+.footer-logo i.fa-mug-hot {
+    color: #E67940 !important;
+}
+
+/* Licznik w koszyku w navbarze */
+.cart-badge {
+    font-size: 0.75rem;
+    position: absolute;
+    top: -2px;
+    right: -2px;
+}
+
+.fa-leaf {
+    color: #DDF187 !important;
+}
+
+.fa-circle-check {
+    color: #DDF187 !important;
+}
+
+.fa-gift, .fa-gem {
+    color: #E67940 !important;
+}
+
+.rounded-circle {
+    color: #E67940 !important;
+}
+
+.btn-outline-dark {
+    color: #E67940 !important;
+}
