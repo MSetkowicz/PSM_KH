@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog & Aktualności - Kawa czy Herbata</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,300&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Zeyada&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="bg-light">
+
+    <!-- Miejsce na wczytanie nawigacji z pliku navbar.html -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Nagłówek Bloga -->
+    <section class="blog-header text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-2">Akademia Smaków & Blog</h1>
+            <p class="lead opacity-90 col-lg-7 mx-auto">Odkryj sekrety profesjonalnego parzenia, historię kultowych naparów i porady od naszych baristów.</p>
+        </div>
+    </section>
+
+    <!-- Główny Kontener z Układem Dwukolumnowym -->
+    <div class="container py-5">
+        <div class="row g-4">
+            
+            <!-- Kolumna Treści Głównej (<main>) -->
+            <main class="col-lg-8">
+                <div class="row g-4">
+                    
+                    <!-- Artykuł 1 -->
+                    <div class="col-md-6">
+                        <article class="card h-100 blog-card shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=80" class="card-img-top blog-img" alt="Przewodnik po parzeniu kawy">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="badge badge-blog">KAWA</span>
+                                    <small class="text-muted"><i class="fa-regular fa-calendar me-1"></i>06 Listopada 2026</small>
+                                </div>
+                                <h3 class="h5 card-title fw-bold mb-3">Jak parzyć kawę w domu? Przewodnik po najpopularniejszych metodach</h3>
+                                <p class="card-text text-muted small flex-grow-1">Nie potrzebujesz ekspresu, aby cieszyć się dobrą kawą. Poznaj French Press, dripper i kawiarkę – zobacz, czym się różnią.</p>
+                                <div class="pt-3 border-top mt-3 d-flex justify-content-between align-items-center">
+                                    <span class="small text-muted"><i class="fa-regular fa-clock me-1"></i>6 min czytania</span>
+                                    <a href="artykul_1.html" class="btn btn-sm btn-outline-dark rounded-pill">Czytaj dalej</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Artykuł 2 -->
+                    <div class="col-md-6">
+                        <article class="card h-100 blog-card shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=600&q=80" class="card-img-top blog-img" alt="Poradnik parzenia herbaty liściastej">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="badge badge-blog">HERBATA</span>
+                                    <small class="text-muted"><i class="fa-regular fa-calendar me-1"></i>06 Listopada 2026</small>
+                                </div>
+                                <h3 class="h5 card-title fw-bold mb-3">Sekret idealnej herbaty liściastej. Jak dobrać temperaturę i czas parzenia?</h3>
+                                <p class="card-text text-muted small flex-grow-1">Ta sama herbata może smakować zupełnie inaczej. Odkryj właściwą temperaturę wody i czas parzenia dla czarnej, zielonej i białej herbaty.</p>
+                                <div class="pt-3 border-top mt-3 d-flex justify-content-between align-items-center">
+                                    <span class="small text-muted"><i class="fa-regular fa-clock me-1"></i>5 min czytania</span>
+                                    <a href="artykul_2.html" class="btn btn-sm btn-outline-dark rounded-pill">Czytaj dalej</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Artykuł 3 -->
+                    <div class="col-md-6">
+                        <article class="card h-100 blog-card shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=600&q=80" class="card-img-top blog-img" alt="Pielęgnacja akcesoriów kawowych">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="badge badge-blog">PORADY</span>
+                                    <small class="text-muted"><i class="fa-regular fa-calendar me-1"></i>22 Kwiecień 2026</small>
+                                </div>
+                                <h3 class="h5 card-title fw-bold mb-3">Jak dbać o kawiarkę i młynki żarnowe, by służyły przez lata?</h3>
+                                <p class="card-text text-muted small flex-grow-1">Czyszczenie uszczelek, odkamienianie kawiarki i usuwanie pyłu kawowego z żaren – sprawdź nasz prosty przewodnik konserwacji.</p>
+                                <div class="pt-3 border-top mt-3 d-flex justify-content-between align-items-center">
+                                    <span class="small text-muted"><i class="fa-regular fa-clock me-1"></i>6 min czytania</span>
+                                    <a href="artykul_3.html" class="btn btn-sm btn-outline-dark rounded-pill">Czytaj dalej</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Artykuł 4 -->
+                    <div class="col-md-6">
+                        <article class="card h-100 blog-card shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80" class="card-img-top blog-img" alt="Cold Brew a kawa mrożona">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="badge badge-blog">KAWA</span>
+                                    <small class="text-muted"><i class="fa-regular fa-calendar me-1"></i>15 Kwiecień 2026</small>
+                                </div>
+                                <h3 class="h5 card-title fw-bold mb-3">Cold Brew a tradycyjna kawa mrożona – różnice i metody przygotowania</h3>
+                                <p class="card-text text-muted small flex-grow-1">Długie macerowanie w zimnej wodzie czy espresso wylane na kostki lodu? Odkryj idealne orzeźwienie na ciepłe dni.</p>
+                                <div class="pt-3 border-top mt-3 d-flex justify-content-between align-items-center">
+                                    <span class="small text-muted"><i class="fa-regular fa-clock me-1"></i>7 min czytania</span>
+                                    <a href="artykul_4.html" class="btn btn-sm btn-outline-dark rounded-pill">Czytaj dalej</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Artykuł 5 -->
+                    <div class="col-md-6">
+                        <article class="card h-100 blog-card shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1597481499750-3e6b22637e12?auto=format&fit=crop&w=600&q=80" class="card-img-top blog-img" alt="Tajniki herbaty Earl Grey">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="badge badge-blog">HERBATA</span>
+                                    <small class="text-muted"><i class="fa-regular fa-calendar me-1"></i>02 Kwiecień 2026</small>
+                                </div>
+                                <h3 class="h5 card-title fw-bold mb-3">Tajemnica olejku z bergamotki – skąd pochodzi prawdziwy Earl Grey?</h3>
+                                <p class="card-text text-muted small flex-grow-1">Prześledź historię aromatyzowania herbaty cytrusami i dowiedz się, jak rozpoznać wysokiej jakości liście zaprawiane naturalnym olejkiem.</p>
+                                <div class="pt-3 border-top mt-3 d-flex justify-content-between align-items-center">
+                                    <span class="small text-muted"><i class="fa-regular fa-clock me-1"></i>5 min czytania</span>
+                                    <a href="single.html" class="btn btn-sm btn-outline-dark rounded-pill">Czytaj dalej</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Artykuł 6 -->
+                    <div class="col-md-6">
+                        <article class="card h-100 blog-card shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&w=600&q=80" class="card-img-top blog-img" alt="Regiony uprawy kawy">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="badge badge-blog">WIEDZA</span>
+                                    <small class="text-muted"><i class="fa-regular fa-calendar me-1"></i>20 Marzec 2026</small>
+                                </div>
+                                <h3 class="h5 card-title fw-bold mb-3">Terroir w świecie kawy – jak pochodzenie wpływa na profil smakowy?</h3>
+                                <p class="card-text text-muted small flex-grow-1">Wysokość upraw, gleba wulkaniczna i mikroklimat. Przekonaj się, dlaczego ziarna z Etiopii smakują zupełnie inaczej niż z Brazylii.</p>
+                                <div class="pt-3 border-top mt-3 d-flex justify-content-between align-items-center">
+                                    <span class="small text-muted"><i class="fa-regular fa-clock me-1"></i>8 min czytania</span>
+                                    <a href="single.html" class="btn btn-sm btn-outline-dark rounded-pill">Czytaj dalej</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+
+                <!-- Statyczny Komponent Paginacji -->
+                <nav aria-label="Nawigacja po stronach bloga" class="mt-5">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true"><i class="fa-solid fa-chevron-left"></i></a>
+                        </li>
+                        <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </main>
+
+            <!-- Pasek Boczny (<aside>) -->
+            <aside class="col-lg-4">
+                <div class="d-flex flex-column gap-4">
+                    
+                    <!-- Wyszukiwarka Tekstowa -->
+                    <div class="sidebar-box shadow-sm">
+                        <h4 class="h5 fw-bold mb-3 border-bottom pb-2">Wyszukaj wpis</h4>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Wpisz szukaną frazę..." aria-label="Wyszukiwarka">
+                            <button class="btn btn-dark" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Lista Kategorii z Badgami -->
+                    <div class="sidebar-box shadow-sm">
+                        <h4 class="h5 fw-bold mb-3 border-bottom pb-2">Kategorie</h4>
+                        <div class="list-group list-group-flush">
+                            <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center px-0 bg-transparent fw-semibold text-secondary">
+                                Kawa i metody alternatywne
+                                <span class="badge bg-dark rounded-pill">14</span>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center px-0 bg-transparent fw-semibold text-secondary">
+                                Świat Herbaty i Naparów
+                                <span class="badge bg-dark rounded-pill">9</span>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center px-0 bg-transparent fw-semibold text-secondary">
+                                Porady & Konserwacja
+                                <span class="badge bg-dark rounded-pill">6</span>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center px-0 bg-transparent fw-semibold text-secondary">
+                                Wiedza o Ziarnach
+                                <span class="badge bg-dark rounded-pill">11</span>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center px-0 bg-transparent fw-semibold text-secondary">
+                                Przepisy Baristów
+                                <span class="badge bg-dark rounded-pill">8</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Blok Polecanych Artykułów -->
+                    <div class="sidebar-box shadow-sm">
+                        <h4 class="h5 fw-bold mb-3 border-bottom pb-2">Polecane artykuły</h4>
+                        <div class="d-flex flex-column gap-3">
+                            
+                            <div class="d-flex align-items-center gap-3">
+                                <a href="artykul_1.html" class="flex-shrink-0">
+                                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=200&q=80" alt="Parzenie kawy" class="sidebar-thumb">
+                                </a>
+                                <div>
+                                    <small class="text-muted d-block mb-1"><i class="fa-regular fa-calendar me-1"></i>06 Listopada 2026</small>
+                                    <h5 class="h6 mb-0 fw-bold">
+                                        <a href="artykul_1.html" class="text-dark text-decoration-none">Jak parzyć kawę w domu?</a>
+                                    </h5>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-center gap-3">
+                                <a href="artykul_2.html" class="flex-shrink-0">
+                                    <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=200&q=80" alt="Herbata liściasta" class="sidebar-thumb">
+                                </a>
+                                <div>
+                                    <small class="text-muted d-block mb-1"><i class="fa-regular fa-calendar me-1"></i>06 Listopada 2026</small>
+                                    <h5 class="h6 mb-0 fw-bold">
+                                        <a href="artykul_2.html" class="text-dark text-decoration-none">Sekret idealnej herbaty liściastej</a>
+                                    </h5>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-center gap-3">
+                                <a href="artykul_3.html" class="flex-shrink-0">
+                                    <img src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=200&q=80" alt="Pielęgnacja akcesoriów" class="sidebar-thumb">
+                                </a>
+                                <div>
+                                    <small class="text-muted d-block mb-1"><i class="fa-regular fa-calendar me-1"></i>22 Kwiecień 2026</small>
+                                    <h5 class="h6 mb-0 fw-bold">
+                                        <a href="artykul_3.html" class="text-dark text-decoration-none">Jak dbać o kawiarkę i młynki?</a>
+                                    </h5>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </aside>
+
+        </div>
+    </div>
+
+    <!-- Miejsce na wczytanie stopki z pliku footer.html -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Bootstrap 5 JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Skrypt ładujący nawigację i stopkę z plików zewnętrznych -->
+    <script>
+        fetch('navbar.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+                updateCartBadge();
+            });
+
+        fetch('footer.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+
+        function updateCartBadge() {
+            const cart = JSON.parse(localStorage.getItem('kch_cart')) || [];
+            const totalItems = cart.reduce((acc, item) => acc + item.qty, 0);
+            const badge = document.getElementById('cartCountBadge');
+            if (badge) badge.innerText = totalItems;
+        }
+    </script>
+</body>
+</html>
