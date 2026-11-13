@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polityka Prywatności - Kawa czy Herbata</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,300&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Zeyada&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .privacy-header {
+            position: relative;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('naglowek_polityka.jpg') center/cover no-repeat;
+            color: #f2eded;
+            padding: 80px 0;
+        }
+        .privacy-article {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: #2b2b2b;
+        }
+        .privacy-article h2 {
+            color: #70574a;
+            font-size: 1.75rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            font-family: 'Plus Jakarta Sans', sans-serif !important;
+        }
+        .breadcrumb a {
+            color: #E67940;
+            text-decoration: none;
+        }
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        .privacy-card {
+            border: none;
+            border-radius: 16px;
+            background: #ffffff;
+        }
+        .text-white-hover:hover {
+            color: #ffffff !important;
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+    <!-- Pasek Nawigacji (Navbar) -->
+    <header class="sticky-top shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light py-3" id="mainNavbar">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center gap-2 fs-4 fw-bold" href="index.html">
+                    <i class="fa-solid fa-mug-hot brand-icon"></i>
+                    <span class="brand-name">Kawa <span class="brand-accent">czy</span> Herbata</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Otwórz menu nawigacji">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold align-items-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="index.html#o-nas">O nas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="oferta.html">Oferta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="kontakt.html">Kontakt</a>
+                        </li>
+                        <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                            <a href="sklep.html" class="btn btn-warning text-dark fw-bold rounded-pill px-4">Sklep online</a>
+                        </li>
+                        <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                            <a href="koszyk.html" class="btn btn-dark rounded-pill px-3 position-relative d-flex align-items-center gap-2">
+                                <i class="fa-solid fa-cart-shopping text-warning"></i>
+                                <span>Koszyk</span>
+                                <span class="badge bg-dark rounded-circle cart-badge" id="cartCountBadge">0</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                            <a href="konto.html" class="btn btn-outline-dark rounded-circle d-flex align-items-center justify-content-center p-0" style="width: 40px; height: 40px;" aria-label="Moje konto" title="Moje konto">
+                                <i class="fa-solid fa-user"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Nawigacja Okruszkowa (breadcrumb) -->
+    <div class="container mt-4 mb-2">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0 small">
+                <li class="breadcrumb-item"><a href="index.html">Strona Główna</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Polityka Prywatności</li>
+            </ol>
+        </nav>
+    </div>
+
+    <!-- Nagłówek Podstrony -->
+    <section class="privacy-header text-center my-3">
+        <div class="container">
+            <h1 class="display-5 fw-bold mb-2">Polityka Prywatności</h1>
+            <p class="text-light opacity-85 small mb-0">Zasady ochrony prywatności oraz przetwarzania danych osobowych użytkowników</p>
+        </div>
+    </section>
+
+    <!-- Główna Treść Dokumentacji Prawnej -->
+    <main class="container py-4 mb-5">
+        <div class="row">
+            <div class="col-12 col-lg-8 mx-auto">
+                <article class="privacy-card p-4 p-md-5 shadow-sm privacy-article">
+                    
+                    <div class="text-muted small mb-4 pb-3 border-bottom">
+                        <i class="fa-regular fa-calendar-days me-1 text-warning"></i> Ostatnia aktualizacja regulaminu: <strong>13 listopada 2026 r.</strong>
+                    </div>
+
+                    <p class="lead text-secondary">
+                        Niniejsza Polityka Prywatności określa zasady przetwarzania i ochrony danych osobowych przekazywanych przez Użytkowników w związku z korzystaniem ze sklepu internetowego oraz usług świadczonych przez platformę „Kawa czy Herbata”.
+                    </p>
+
+                    <h2>§ 1. Administrator Danych Osobowych</h2>
+                    <p>
+                        Administratorem danych osobowych Użytkowników serwisu jest spółka <strong>"Kawa czy Herbata" Sp. z o.o.</strong> z siedzibą pod adresem: ul. Aromatyczna 12/4, 00-001 Warszawa, wpisana do rejestru przedsiębiorców prowadzonego przez Sąd Rejonowy dla m.st. Warszawy, pod numerem KRS: 0000123456, NIP: 123-456-78-90, REGON: 987654321 (dalej jako: „Administrator”).
+                    </p>
+                    <p>
+                        W sprawach związanych z ochroną danych osobowych oraz realizacją przysługujących praw można skontaktować się z wyznaczonym Inspektorem Ochrony Danych pod adresem e-mail: <a href="mailto:kontakt@kawaczyherbata.pl" class="text-decoration-none fw-semibold" style="color: #E67940;">kontakt@kawaczyherbata.pl</a> lub tradycyjnie na adres siedziby spółki z dopiskiem „IOD”.
+                    </p>
+
+                    <h2>§ 2. Cele i Podstawy Przetwarzania Danych</h2>
+                    <p>
+                        Administrator przetwarza dane osobowe Użytkowników w celach niezbędnych do prawidłowego świadczenia usług, zawierania umów sprzedaży oraz realizacji zamówień składanych w sklepie internetowym. Podstawami prawnymi przetwarzania danych są:
+                    </p>
+                    <ul>
+                        <li><strong>Art. 6 ust. 1 lit. b RODO</strong> – wykonanie umowy sprzedaży lub podjęcie działań na żądanie Użytkownika przed jej zawarciem (np. obsługa konta klienta, proces składania zamówienia w koszyku i dostawa).</li>
+                        <li><strong>Art. 6 ust. 1 lit. c RODO</strong> – wypełnienie obowiązków prawnych ciążących na Administratorze, w szczególności prowadzenie rachunkowości oraz rozliczeń podatkowych (wystawianie faktur).</li>
+                        <li><strong>Art. 6 ust. 1 lit. f RODO</strong> – realizacja prawnie uzasadnionych interesów Administratora, takich jak dochodzenie roszczeń, obrona przed roszczeniami oraz zapewnienie bezpieczeństwa IT serwisu.</li>
+                    </ul>
+
+                    <h2>§ 3. Prawa Użytkownika (RODO)</h2>
+                    <p>
+                        Zgodnie z ogólnym rozporządzeniem o ochronie danych (RODO), każdemu Użytkownikowi przysługują następujące uprawnienia względem swoich danych osobowych:
+                    </p>
+                    <ul>
+                        <li><strong>Prawo dostępu do danych</strong> – prawo do uzyskania informacji o przetwarzanych danych oraz kopii dokumentacji.</li>
+                        <li><strong>Prawo do sprostowania (poprawiania) danych</strong> – prawo żądania niezwłocznego sprostowania danych nieprawidłowych lub ich uzupełnienia.</li>
+                        <li><strong>Prawo do usunięcia danych („prawo do bycia zapomnianym”)</strong> – w sytuacjach, gdy dane nie są już niezbędne do celów, dla których zostały zebrane.</li>
+                        <li><strong>Prawo do ograniczenia przetwarzania</strong> – w przypadkach kwestionowania prawidłowości danych lub sprzeciwu wobec ich przetwarzania.</li>
+                        <li><strong>Prawo do przenoszenia danych</strong> – prawo otrzymania danych w ustrukturyzowanym, powszechnie używanym formacie nadającym się do odczytu maszynowego.</li>
+                        <li><strong>Prawo do wniesienia sprzeciwu</strong> – możliwość sprzeciwu wobec przetwarzania danych na podstawie prawnie uzasadnionego interesu.</li>
+                    </ul>
+                    <p>
+                        W celu realizacji powyższych praw Użytkownik może skorzystać z panelu klienta w zakładce „Ustawienia konta” lub przesłać stosowne zgłoszenie drogą elektroniczną na adres e-mail Administratora.
+                    </p>
+
+                    <h2>§ 4. Polityka Plików Cookies</h2>
+                    <p>
+                        Serwis internetowy „Kawa czy Herbata” używa plików cookies (ciasteczek). Są to niewielkie pliki tekstowe wysyłane przez serwer i zapisywane po stronie urządzenia końcowego Użytkownika (komputera, tabletu czy smartfona).
+                    </p>
+                    <p>
+                        Pliki cookies wykorzystywane są w celach utrzymania sesji zalogowanego użytkownika (w panelu konto.html), zapamiętywania zawartości koszyka zakupowego oraz zbierania anonimowych statystyk oglądalności serwisu. Poniższe zestawienie prezentuje rodzaje wykorzystywanych plików cookies:
+                    </p>
+
+                    <!-- Zestawienie tabelaryczne w klasie table-responsive -->
+                    <div class="table-responsive my-4">
+                        <table class="table table-bordered align-middle mb-0">
+                            <thead class="table-light">
+                                <tr>
+                                    <th scope="col">Rodzaj pliku Cookies</th>
+                                    <th scope="col">Cel stosowania</th>
+                                    <th scope="col">Czas przechowywania</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="fw-bold">Niezbędne (techniczne)</td>
+                                    <td>Utrzymanie sesji użytkownika, obsługa koszyka zakupowego oraz mechanizmów bezpieczeństwa.</td>
+                                    <td>Do zamknięcia przeglądarki lub sesja stała (max 30 dni)</td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold">Funkcjonalne</td>
+                                    <td>Zapamiętywanie preferencji i ustawień interfejsu wybieranych przez Użytkownika.</td>
+                                    <td>6 miesięcy</td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold">Analityczne / Statystyczne</td>
+                                    <td>Tworzenie statystyk odwiedzin i optymalizacja działania strony pod kątem UX.</td>
+                                    <td>1 rok</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <p class="mb-0">
+                        Użytkownik ma możliwość w każdej chwili samodzielnie zmienić ustawienia dotyczące plików cookies w opcjach swojej przeglądarki internetowej (zablokować ich automatyczną obsługę lub wymusić powiadomienie o każdorazowym ich zapisaniu). Szczegółowe informacje o możliwości i sposobach obsługi cookies dostępne są w ustawieniach oprogramowania przeglądarki.
+                    </p>
+
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <!-- Globalna Rozbudowana Stopka Serwisu -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container">
+            <!-- Główna struktura 4-kolumnowa -->
+            <div class="row g-4 mb-4 pb-4 border-bottom border-secondary">
+                
+                <!-- Kolumna 1: O marce -->
+                <div class="col-lg-3 col-md-6">
+                    <a href="index.html" class="d-flex align-items-center gap-2 fs-4 fw-bold text-white text-decoration-none mb-3">
+                        <i class="fa-solid fa-mug-hot brand-icon"></i>
+                        <span class="brand-name">Kawa <span class="brand-accent">czy</span> Herbata</span>
+                    </a>
+                    <p class="text-secondary small mb-3">
+                        Rzemieślnicza palarnia kawy i wyselekcjonowane herbaty liściaste. Łączymy pasję i tradycję, by dostarczać niezapomniane chwile do Twojej filiżanki.
+                    </p>
+                    <div class="d-flex gap-3 fs-5">
+                        <a href="#" class="text-secondary text-white-hover" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="text-secondary text-white-hover" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="text-secondary text-white-hover" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+
+                <!-- Kolumna 2: Szybka nawigacja -->
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="h5 fw-bold text-white mb-3 font-jakarta">Szybka nawigacja</h3>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small mb-0">
+                        <li><a href="index.html" class="text-secondary text-decoration-none text-white-hover">Strona główna</a></li>
+                        <li><a href="index.html#o-nas" class="text-secondary text-decoration-none text-white-hover">O nas</a></li>
+                        <li><a href="oferta.html" class="text-secondary text-decoration-none text-white-hover">Oferta</a></li>
+                        <li><a href="blog.html" class="text-secondary text-decoration-none text-white-hover">Blog</a></li>
+                        <li><a href="kontakt.html" class="text-secondary text-decoration-none text-white-hover">Kontakt</a></li>
+                    </ul>
+                </div>
+
+                <!-- Kolumna 3: Strefa klienta / Sklep -->
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="h5 fw-bold text-white mb-3 font-jakarta">Strefa klienta</h3>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small mb-0">
+                        <li><a href="sklep.html" class="text-secondary text-decoration-none text-white-hover">Sklep online</a></li>
+                        <li><a href="koszyk.html" class="text-secondary text-decoration-none text-white-hover">Koszyk</a></li>
+                        <li><a href="konto.html" class="text-secondary text-decoration-none text-white-hover">Moje konto</a></li>
+                        <li><a href="polityka-prywatnosci.html" class="text-secondary text-decoration-none text-white-hover">Polityka prywatności</a></li>
+                    </ul>
+                </div>
+
+                <!-- Kolumna 4: Newsletter i kontakt -->
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="h5 fw-bold text-white mb-3 font-jakarta">Newsletter</h3>
+                    <p class="text-secondary small mb-3">Zapisz się, aby otrzymywać informacje o nowościach i rabatach.</p>
+                    
+                    <form onsubmit="event.preventDefault(); alert('Dziękujemy za zapis do newslettera!');" class="input-group mb-3">
+                        <input type="email" class="form-control form-control-sm text-white bg-secondary border-secondary placeholder-light" placeholder="Twój e-mail..." required>
+                        <button class="btn btn-warning text-dark fw-bold px-3" type="submit">Zapisz</button>
+                    </form>
+
+                    <div class="text-secondary small">
+                        <p class="mb-1"><i class="fa-solid fa-envelope me-2 text-warning"></i>kontakt@kawaczyherbata.pl</p>
+                        <p class="mb-0"><i class="fa-solid fa-phone me-2 text-warning"></i>+48 123 456 789</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Dolny Pasek Prawny (Sub-footer) -->
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 pt-2 small text-secondary">
+                <p class="mb-0">
+                    &copy; 2026 Kawa czy Herbata Sp. z o.o. Wszelkie prawa zastrzeżone. Projekt i realizacja: Zespół KCH.
+                </p>
+                <div>
+                    <a href="polityka-prywatnosci.html" class="text-secondary text-decoration-none text-white-hover">Polityka prywatności</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Skrypt aktualizacji licznika koszyka w navbarze -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            updateCartBadge();
+        });
+
+        function updateCartBadge() {
+            const cart = JSON.parse(localStorage.getItem('kch_cart')) || [];
+            const totalItems = cart.reduce((acc, item) => acc + item.qty, 0);
+            const badge = document.getElementById('cartCountBadge');
+            if (badge) badge.innerText = totalItems;
+        }
+    </script>
+</body>
+</html>

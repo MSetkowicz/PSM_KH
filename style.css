@@ -618,3 +618,33 @@ header,
 .btn-outline-dark {
     color: #E67940 !important;
 }
+
+.error-code {
+            font-size: 7rem;
+            font-weight: 800;
+            color: #591600;
+            line-height: 1;
+            font-family: 'Plus Jakarta Sans', sans-serif !important;
+        }
+        .error-wrapper {
+            min-height: calc(100vh - 280px);
+        }
+
+        .contact-header {
+            position: relative;
+            background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('konto_tlo.jpg') center/cover no-repeat;
+            color: #f2eded;
+            padding: 80px 0;
+        }
+        .contact-card {
+            border: none;
+            border-radius: 16px;
+            background: #ffffff;
+        }
+        .breadcrumb a {
+            color: #E67940;
+            text-decoration: none;
+        }
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Błąd 404 - Nie znaleziono strony - Kawa czy Herbata</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,300&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Zeyada&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css">
+
+    
+</head>
+<body class="bg-light d-flex flex-column min-vh-100">
+
+    <!-- Pasek Nawigacji (Navbar) -->
+    <header class="sticky-top shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light py-3" id="mainNavbar">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center gap-2 fs-4 fw-bold" href="index.html">
+                    <i class="fa-solid fa-mug-hot brand-icon"></i>
+                    <span class="brand-name">Kawa <span class="brand-accent">czy</span> Herbata</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Otwórz menu nawigacji">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold align-items-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="index.html#o-nas">O nas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="oferta.html">Oferta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="kontakt.html">Kontakt</a>
+                        </li>
+                        <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                            <a href="sklep.html" class="btn btn-warning text-dark fw-bold rounded-pill px-4">Sklep online</a>
+                        </li>
+                        <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                            <a href="koszyk.html" class="btn btn-dark rounded-pill px-3 position-relative d-flex align-items-center gap-2">
+                                <i class="fa-solid fa-cart-shopping text-warning"></i>
+                                <span>Koszyk</span>
+                                <span class="badge bg-dark rounded-circle cart-badge" id="cartCountBadge">0</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                            <a href="konto.html" class="btn btn-outline-dark rounded-circle d-flex align-items-center justify-content-center p-0" style="width: 40px; height: 40px;" aria-label="Moje konto" title="Moje konto">
+                                <i class="fa-solid fa-user"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Główny Układ Błędu 404 -->
+    <main class="container error-wrapper d-flex flex-column align-items-center justify-content-center text-center py-5 my-auto">
+        <div class="col-lg-6 mx-auto">
+            
+            <!-- Kod błędu -->
+            <div class="error-code mb-3">404</div>
+            
+            <!-- Główny nagłówek -->
+            <h1 class="display-6 fw-bold mb-3 text-dark">Nie znaleziono strony</h1>
+            
+            <!-- Dwuzdaniowy komunikat wyjaśniający -->
+            <p class="text-muted mb-4 lead fs-6">
+                Szukana przez Ciebie strona mogła zostać przeniesiona pod inny adres lub usunięta z serwisu. Być może wpisany adres URL zawiera również literówkę.
+            </p>
+
+            <!-- Pole wyszukiwarki -->
+            <form action="sklep.html" method="GET" class="input-group mb-4 shadow-sm rounded-pill overflow-hidden">
+                <input type="text" name="s" class="form-control form-control-lg border-0 ps-4 py-3" placeholder="Szukasz kawy, herbaty lub akcesoriów? Wpisz frazę..." aria-label="Szukaj w serwisie">
+                <button class="btn btn-warning px-4 fw-bold text-dark" type="submit">
+                    <i class="fa-solid fa-magnifying-glass me-1"></i> Szukaj
+                </button>
+            </form>
+
+            <!-- Zestaw odnośników ratunkowych w formie przycisków -->
+            <div class="d-flex flex-column flex-sm-row justify-content-center gap-3 mt-4">
+                <a href="index.html" class="btn btn-dark rounded-pill px-4 py-2 fw-semibold shadow-sm">
+                    <i class="fa-solid fa-house me-2 text-warning"></i>Wróć do strony głównej
+                </a>
+                <a href="sklep.html" class="btn btn-warning rounded-pill px-4 py-2 fw-semibold text-dark shadow-sm">
+                    <i class="fa-solid fa-store me-2"></i>Przejdź do sklepu
+                </a>
+                <a href="kontakt.html" class="btn btn-outline-dark rounded-pill px-4 py-2 fw-semibold shadow-sm">
+                    <i class="fa-solid fa-envelope me-2"></i>Skontaktuj się z nami
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Stopka (Footer) -->
+    <footer class="bg-dark text-white pt-5 pb-4 mt-auto">
+        <div class="container">
+            <div class="row g-4 mb-4 pb-4 border-bottom border-secondary">
+                <div class="col-md-6">
+                    <a href="index.html" class="d-flex align-items-center gap-2 fs-4 fw-bold text-white text-decoration-none mb-3">
+                        <i class="fa-solid fa-mug-hot brand-icon"></i>
+                        <span class="brand-name">Kawa <span class="brand-accent">czy</span> Herbata</span>
+                    </a>
+                    <p class="text-secondary mb-0 col-lg-10">
+                        Sklep internetowy oraz palarnia z pasją do tworzenia niezapomnianych chwil przy filiżance najlepszych naparów[cite: 38].
+                    </p>
+                </div>
+
+                <div class="col-md-6 text-md-end">
+                    <p class="text-secondary small mb-0">
+                        <strong class="text-light">Dane identyfikacyjne podmiotu:</strong><br>
+                        "Kawa czy Herbata" Sp. z o.o.<br>
+                        NIP: 123-456-78-90 | REGON: 987654321<br>
+                        KRS: 0000123456[cite: 38]
+                    </p>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center gap-3">
+                <div class="d-flex align-items-center gap-3">
+                    <p class="text-secondary small mb-0">
+                        &copy; 2026 Kawa czy Herbata. Wszelkie prawa zastrzeżone[cite: 38].
+                    </p>
+                    <span class="text-secondary">•</span>
+                    <a href="polityka-prywatnosci.html" class="text-secondary small text-decoration-none text-white-hover">Polityka Prywatności</a>
+                </div>
+                <div class="d-flex gap-3 fs-5">
+                    <a href="#" class="text-secondary text-white-hover" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="text-secondary text-white-hover" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="text-secondary text-white-hover" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Skrypt aktualizacji licznika koszyka w navbarze -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            updateCartBadge();
+        });
+
+        function updateCartBadge() {
+            const cart = JSON.parse(localStorage.getItem('kch_cart')) || [];
+            const totalItems = cart.reduce((acc, item) => acc + item.qty, 0);
+            const badge = document.getElementById('cartCountBadge');
+            if (badge) badge.innerText = totalItems;
+        }
+    </script>
+</body>
+</html>

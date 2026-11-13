@@ -244,110 +244,6 @@
         </div>
     </section>
 
-    <!-- 6. Sekcja Kontaktowa z Formularzem -->
-    <section id="kontakt" class="py-5 bg-light">
-        <div class="container py-4">
-            <div class="text-center mb-5">
-                <span class="section-tag">Porozmawiajmy</span>
-                <h2 class="display-6 fw-bold">Skontaktuj się z nami</h2>
-                <p class="text-muted col-lg-6 mx-auto">Chcesz złożyć zamówienie hurtowe, zapytać o indywidualne zestawy prezentowe lub podjąć współpracę?</p>
-            </div>
-
-            <div class="row g-4">
-                <!-- Dane teleadresowe -->
-                <div class="col-lg-5">
-                    <div class="bg-white p-4 p-md-5 rounded-4 shadow-sm h-100">
-                        <h3 class="h4 fw-bold mb-3">Dane Kontaktowe</h3>
-                        <p class="text-muted mb-4">Jesteśmy do Twojej dyspozycji od poniedziałku do piątku. Zapraszamy do kontaktu telefonicznego, e-mailowego lub odwiedzin w naszym sklepie stacjonarnym.</p>
-
-                        <div class="d-flex flex-column gap-3">
-                            <div class="d-flex align-items-start gap-3">
-                                <div class="bg-light text-danger rounded-circle p-3 d-flex align-items-center justify-content-center" style="width: 48px; height: 48px;">
-                                    <i class="fa-solid fa-location-dot fs-5"></i>
-                                </div>
-                                <div>
-                                    <strong class="d-block text-dark">Adres stacjonarny:</strong>
-                                    <span class="text-muted">ul. Aromatyczna 12/4, 00-001 Warszawa</span>
-                                </div>
-                            </div>
-
-                            <div class="d-flex align-items-start gap-3">
-                                <div class="bg-light text-danger rounded-circle p-3 d-flex align-items-center justify-content-center" style="width: 48px; height: 48px;">
-                                    <i class="fa-solid fa-envelope fs-5"></i>
-                                </div>
-                                <div>
-                                    <strong class="d-block text-dark">Poczta elektroniczna:</strong>
-                                    <span class="text-muted">kontakt@kawaczyherbata.pl</span>
-                                </div>
-                            </div>
-
-                            <div class="d-flex align-items-start gap-3">
-                                <div class="bg-light text-danger rounded-circle p-3 d-flex align-items-center justify-content-center" style="width: 48px; height: 48px;">
-                                    <i class="fa-solid fa-phone fs-5"></i>
-                                </div>
-                                <div>
-                                    <strong class="d-block text-dark">Infolinia i zamówienia:</strong>
-                                    <span class="text-muted">+48 123 456 789</span>
-                                </div>
-                            </div>
-
-                            <div class="d-flex align-items-start gap-3">
-                                <div class="bg-light text-danger rounded-circle p-3 d-flex align-items-center justify-content-center" style="width: 48px; height: 48px;">
-                                    <i class="fa-solid fa-clock fs-5"></i>
-                                </div>
-                                <div>
-                                    <strong class="d-block text-dark">Godziny otwarcia:</strong>
-                                    <span class="text-muted">Pn - Pt: 8:00 - 18:00 | Sob: 9:00 - 14:00</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Formularz Zapytania Ofertowego -->
-                <div class="col-lg-7">
-                    <div class="bg-white p-4 p-md-5 rounded-4 shadow-sm h-100">
-                        <form id="offerForm" onsubmit="handleFormSubmit(event)">
-                            <div class="mb-3">
-                                <label for="fullName" class="form-label fw-semibold">Imię i nazwisko *</label>
-                                <input type="text" id="fullName" class="form-control form-control-lg" placeholder="np. Jan Kowalski" required>
-                            </div>
-
-                            <div class="mb-3">
-                                <label for="email" class="form-label fw-semibold">Adres e-mail *</label>
-                                <input type="email" id="email" class="form-control form-control-lg" placeholder="np. jan.kowalski@domena.pl" required>
-                            </div>
-
-                            <div class="mb-3">
-                                <label for="subject" class="form-label fw-semibold">Temat wiadomości *</label>
-                                <select id="subject" class="form-select form-select-lg" required>
-                                    <option value="" disabled selected>-- Wybierz temat zapytania --</option>
-                                    <option value="hurt">Zapytanie o ofertę hurtową</option>
-                                    <option value="indywidualne">Zamówienie indywidualne / Zestawy</option>
-                                    <option value="wspolpraca">Propozycja współpracy</option>
-                                    <option value="inne">Inne zapytanie</option>
-                                </select>
-                            </div>
-
-                            <div class="mb-4">
-                                <label for="message" class="form-label fw-semibold">Treść zapytania *</label>
-                                <textarea id="message" class="form-control form-control-lg" rows="4" placeholder="Wpisz treść swojej wiadomości..." required></textarea>
-                            </div>
-
-                            <button type="submit" class="btn btn-warning btn-lg w-100 fw-bold">
-                                <i class="fa-solid fa-paper-plane me-2"></i> Wyślij zapytanie
-                            </button>
-                        </form>
-
-                        <div id="formSuccessMessage" class="alert alert-success d-none mt-3" role="alert">
-                            <i class="fa-solid fa-circle-check me-2"></i> Dziękujemy! Twoja wiadomość została wysłana. Odpowiemy najszybciej jak to możliwe.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Miejsce na wczytanie stopki z pliku footer.html -->
     <div id="footer-placeholder"></div>
 
@@ -374,12 +270,6 @@
             const totalItems = cart.reduce((acc, item) => acc + item.qty, 0);
             const badge = document.getElementById('cartCountBadge');
             if (badge) badge.innerText = totalItems;
-        }
-
-        function handleFormSubmit(e) {
-            e.preventDefault();
-            document.getElementById('offerForm').classList.add('d-none');
-            document.getElementById('formSuccessMessage').classList.remove('d-none');
         }
     </script>
 </body>
